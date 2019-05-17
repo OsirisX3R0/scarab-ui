@@ -1,5 +1,4 @@
-scarab/*.css
-scarab/*.sass
+scarab/*
 
 !scarab/*.sass
 !scarab/scarab.css
