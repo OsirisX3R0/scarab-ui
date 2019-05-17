@@ -1,0 +1,11 @@
+button, a.button {
+  background-color: #fff;
+  color: text-color(#000);
+  border-width: 0;
+  padding: 0.35rem;
+}
+
+a.button {
+  text-decoration: none;
+}
+/*# sourceMappingURL=buttons.css.map */
