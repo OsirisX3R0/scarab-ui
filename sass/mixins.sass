@@ -1,5 +1,10 @@
-@function text-color($color)
-  @if (lightness($color) > 50)
-    @return #222; // Lighter backgorund, return dark color
+@mixin text-color($color)
+  @if (lightness($color) > 70)
+    color: #222 // Lighter backgorund, return dark color
   @else
-    @return #f5f5f5; // Darker background, return light color
+    color: #f5f5f5 // Darker background, return light color
+
+@mixin default-font
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-size: 13px
+  font-weight: 400

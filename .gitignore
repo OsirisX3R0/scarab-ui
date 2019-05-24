@@ -1,6 +1,4 @@
 css/*.css.map
-css/default.css
-css/reset.css
-css/typography.css
-css/variables.css
-css/mixins.css
+css/*.css
+
+!css/scarab.css
