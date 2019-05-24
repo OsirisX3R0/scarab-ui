@@ -3,53 +3,68 @@
 
 button
     background-color: $bg-button
-    @include text-color($bg-button)
+    @include set-text-color($bg-button)
     @include default-font
     border: 1px solid darken($bg-button, 3%)
     border-radius: 4px
     font-size: 1rem
-    padding: 0.4rem
+    padding: 0.4rem 0.7rem
+    cursor: pointer
+
+    &.square
+        border-radius: 0px;
+
+    &.pill
+        border-radius: 20px;
 
     &.primary
         background-color: $primary
-        @include text-color($bg-button)
+        border: 1px solid $primary
+        @include set-text-color($primary)
         &:hover
-            background-color: darken($primary, 10%)
+            @include darken-6($primary)
 
     &.secondary
         background-color: $secondary
-        @include text-color($bg-button)
+        border: 1px solid $secondary
+        @include set-text-color($primary)
         &:hover
-            background-color: darken($secondary, 10%)
+            @include darken-6($secondary)
 
     &.info
         background-color: $info
-        @include text-color($bg-button)
+        border: 1px solid $info
+        @include set-text-color($primary)
         &:hover
-            background-color: darken($info, 10%)
+            @include darken-6($info)
 
     &.success
         background-color: $success
-        @include text-color($bg-button)
+        border: 1px solid $success
+        @include set-text-color($primary)
         &:hover
-            background-color: darken($success, 10%)
+            @include darken-6($success)
 
     &.warn
         background-color: $warn
-        @include text-color($bg-button)
+        border: 1px solid $warn
+        @include set-text-color($primary)
         &:hover
-            background-color: darken($warn, 10%)
+            @include darken-6($warn)
 
     &.error
         background-color: $error
-        @include text-color($bg-button)
+        border: 1px solid $error
+        @include set-text-color($primary)
         &:hover
-            background-color: darken($error, 10%)
+            @include darken-6($error)
     
 
 input[type=button]
-    &,input[type=submit]
-        @extend button
+    @extend button
+
+input[type=submit]
+    @extend button
 
 a
     &.button
