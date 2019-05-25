@@ -1,0 +1,50 @@
+@import variables
+@import mixins
+
+.badge    
+    background-color: $bg-button
+    @include set-text-color($bg-button)
+    // @include default-font
+    // border: 1px solid darken($bg-button, 3%)
+    border-radius: 4px
+    font-size: 0.75rem
+    padding: 0.2rem 0.5rem
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
+
+    &.square
+        border-radius: 0px;
+
+    &.pill
+        border-radius: 20px;
+
+    &.primary
+        background-color: $primary
+        @include set-text-color($primary)
+
+    &.secondary
+        background-color: $secondary
+        @include set-text-color($secondary)
+
+    &.info
+        background-color: $info
+        @include set-text-color($info)
+
+    &.success
+        background-color: $success
+        @include set-text-color($success)
+
+    &.warn
+        background-color: $warn
+        @include set-text-color($warn)
+
+    &.error
+        background-color: $error
+        @include set-text-color($error)
+
+    &.small
+        font-size: 0.7rem
+        padding: 0.05rem 0.3rem
+
+    &.large
+        font-size: 0.85rem
+        padding: 0.3rem 0.6rem
