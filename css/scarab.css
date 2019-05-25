@@ -186,6 +186,16 @@ button.error:hover, input.error:hover[type=button], input.error:hover[type=submi
   background-color: #ca0000;
 }
 
+button.small, input.small[type=button], input.small[type=submit], a.small.button {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+}
+
+button.large, input.large[type=button], input.large[type=submit], a.large.button {
+  font-size: 1.25rem;
+  padding: 0.6rem 0.9rem;
+}
+
 a.button {
   text-decoration: none;
 }
@@ -253,6 +263,32 @@ table.warn thead th {
 table.error thead th {
   background-color: #E90000;
   color: #f5f5f5;
+}
+
+.card {
+  background-color: white;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.card .head {
+  width: auto;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.card .head h3 {
+  font-size: 1.25rem;
+}
+
+.card .body {
+  padding: 0.5rem;
+}
+
+.card .foot {
+  border-top: 1px solid #cfcfcf;
+  padding: 0.75rem 0.75rem 0 0;
 }
 
 .container {

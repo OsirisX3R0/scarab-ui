@@ -2,7 +2,7 @@ button, input[type=button], input[type=submit], a.button {
   background-color: #e8e8e8;
   color: #222;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   border: 1px solid #e1e1e1;
   border-radius: 4px;
@@ -77,6 +77,16 @@ button.error, input.error[type=button], input.error[type=submit], a.error.button
 
 button.error:hover, input.error:hover[type=button], input.error:hover[type=submit], a.error.button:hover {
   background-color: #ca0000;
+}
+
+button.small, input.small[type=button], input.small[type=submit], a.small.button {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+}
+
+button.large, input.large[type=button], input.large[type=submit], a.large.button {
+  font-size: 1.25rem;
+  padding: 0.6rem 0.9rem;
 }
 
 a.button {
