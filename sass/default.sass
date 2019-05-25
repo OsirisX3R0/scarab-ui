@@ -1,6 +1,15 @@
 @import mixins
+@import variables
 
 body
     background-color: #f5f5f5
     color:#222
     @include default-font
+
+hr
+    // border-color: darken($bg-button, 0%)
+    height: 1px
+    color: $table-border
+    background-color: $table-border
+    border: none;
+    margin: 0.75rem 0
