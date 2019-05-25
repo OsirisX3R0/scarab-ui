@@ -1,3 +1,20 @@
 .container
     max-width: 1200px
     margin: auto
+    padding: 1rem
+
+.grid
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax((1% / 12), 1fr))
+
+@for $i from 1 through 10
+    .gap-#{$i * 5}
+        grid-gap: $i * 5px
+    .row-gap-#{$i * 5}
+        grid-row-gap: $i * 5px
+    .col-gap-#{$i * 5}
+        grid-column-gap: $i * 5px
+
+@for $i from 1 through 12
+    .span-#{$i}
+        grid-column: span $i
