@@ -105,6 +105,26 @@ code {
   padding: 0.3rem;
 }
 
+.upper {
+  text-transform: uppercase;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
 button, input[type=button], input[type=submit], a.button {
   background-color: #e8e8e8;
   color: #222;
@@ -370,6 +390,87 @@ input[type=text], input[type=number], input[type=date], input[type=datetime], in
 .form-group-col label {
   display: inline;
   margin-right: 5px;
+}
+
+.message {
+  border-radius: 3px;
+  margin-bottom: 0.75rem;
+  padding: 1rem;
+}
+
+.message.info {
+  background-color: #51a1ec;
+  color: #222;
+}
+
+.message.success {
+  background-color: #05C16C;
+  color: #f5f5f5;
+}
+
+.message.warn {
+  background-color: #E1BB22;
+  color: #222;
+}
+
+.message.error {
+  background-color: #E90000;
+  color: #f5f5f5;
+}
+
+.message.light {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.message.light.info {
+  background-color: #c4dff9;
+  border-color: #51a1ec;
+  color: #222;
+}
+
+.message.light.success {
+  background-color: #4bfaab;
+  border-color: #05C16C;
+  color: #222;
+}
+
+.message.light.warn {
+  background-color: #f0de92;
+  border-color: #E1BB22;
+  color: #222;
+}
+
+.message.light.error {
+  background-color: #ff6a6a;
+  border-color: #E90000;
+  color: #222;
+}
+
+.message.outline {
+  background: none;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.message.outline.info {
+  border-color: #51a1ec;
+  color: #51a1ec;
+}
+
+.message.outline.success {
+  border-color: #05C16C;
+  color: #05C16C;
+}
+
+.message.outline.warn {
+  border-color: #E1BB22;
+  color: #E1BB22;
+}
+
+.message.outline.error {
+  border-color: #E90000;
+  color: #E90000;
 }
 
 .container {
