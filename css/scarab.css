@@ -349,6 +349,29 @@ table.error thead th {
   padding: 0.3rem 0.6rem;
 }
 
+input[type=text], input[type=number], input[type=date], input[type=datetime], input[type=color], input[type=radio], input[type=checkbox], select {
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  padding: 0.25rem;
+}
+
+.form-group {
+  margin: 0 0.25rem 0.5rem 0.25rem;
+}
+
+.form-group label {
+  display: block;
+}
+
+.form-group-col {
+  margin: 0 0.25rem 0.5rem 0.25rem;
+}
+
+.form-group-col label {
+  display: inline;
+  margin-right: 5px;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
@@ -358,8 +381,8 @@ table.error thead th {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(0.08333%, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(0.08333%, 1fr));
+  -ms-grid-columns: (minmax(375px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
 }
 
 .gap-5 {
