@@ -4,20 +4,80 @@
 .card
     background-color: white
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
-    margin: 1rem
-    padding: 1rem
+    margin: 1.2rem
+    padding: 0.9rem 1rem
+
+    &.primary
+        background-color: $primary
+        @include set-text-color($primary)
+
+    &.secondary
+        background-color: $secondary
+        @include set-text-color($secondary)
+
+    &.info
+        background-color: $info
+        @include set-text-color($info)
+
+    &.success
+        background-color: $success
+        @include set-text-color($success)
+
+    &.warn
+        background-color: $warn
+        @include set-text-color($warn)
+
+    &.error
+        background-color: $error
+        @include set-text-color($error)
+
+    &.light
+        background-color: $bg-light
+        @include set-text-color($bg-light)
+
+    &.dark
+        background-color: $bg-dark
+        @include set-text-color($bg-dark)
     
-    .head
+    .card-head
         width: auto
         border-bottom: 1px solid $table-border
-        // margin: 0.75rem
 
         h3
             font-size: 1.25rem
 
-    .body
+    .card-body
         padding: 0.5rem
 
-    .foot
+    .card-foot
         border-top: 1px solid $table-border
-        padding: 0.75rem 0.75rem 0 0
+        padding: 0.75rem 0 0 0
+        display: grid
+
+        &-2
+            @extend .card-foot
+            grid-template-columns: 1fr 1fr
+
+        &-3
+            @extend .card-foot
+            grid-template-columns: 1fr 1fr 1fr
+
+        .align-left
+            text-align: left
+
+        &-left
+            @extend .align-left
+
+        .align-right
+            text-align: right
+
+        &-right
+            @extend .align-right
+
+        .align-center
+            text-align: center
+
+        &-center
+            @extend .align-center
+
+    

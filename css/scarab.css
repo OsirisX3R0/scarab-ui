@@ -7,7 +7,7 @@
 
 body {
   background-color: #f5f5f5;
-  color: #222;
+  color: #18212f;
 }
 
 hr {
@@ -76,32 +76,32 @@ mark {
 
 mark.primary {
   background-color: #0808c9;
-  color: #f5f5f5;
+  color: ghostwhite;
 }
 
 mark.secondary {
   background-color: #9e9e9e;
-  color: #222;
+  color: #18212f;
 }
 
 mark.info {
   background-color: #51a1ec;
-  color: #222;
+  color: #18212f;
 }
 
 mark.success {
   background-color: #05C16C;
-  color: #f5f5f5;
+  color: ghostwhite;
 }
 
 mark.warn {
   background-color: #E1BB22;
-  color: #f5f5f5;
+  color: ghostwhite;
 }
 
 mark.error {
   background-color: #E90000;
-  color: #f5f5f5;
+  color: ghostwhite;
 }
 
 pre, code {
@@ -138,11 +138,10 @@ code {
 
 button, input[type=button], input[type=submit], a.button {
   background-color: #e8e8e8;
-  color: #222;
+  color: #18212f;
   font-family: 'Montserrat-Regular', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  border: 1px solid #e1e1e1;
   border-radius: 4px;
   font-size: 1rem;
   padding: 0.4rem 0.7rem;
@@ -164,7 +163,7 @@ button.pill, input.pill[type=button], input.pill[type=submit], a.pill.button {
 button.primary, input.primary[type=button], input.primary[type=submit], a.primary.button {
   background-color: #0808c9;
   border: 1px solid #0808c9;
-  color: #f5f5f5;
+  color: ghostwhite;
 }
 
 button.primary:hover, input.primary:hover[type=button], input.primary:hover[type=submit], a.primary.button:hover {
@@ -174,7 +173,7 @@ button.primary:hover, input.primary:hover[type=button], input.primary:hover[type
 button.secondary, input.secondary[type=button], input.secondary[type=submit], a.secondary.button {
   background-color: #9e9e9e;
   border: 1px solid #9e9e9e;
-  color: #222;
+  color: #18212f;
 }
 
 button.secondary:hover, input.secondary:hover[type=button], input.secondary:hover[type=submit], a.secondary.button:hover {
@@ -184,7 +183,7 @@ button.secondary:hover, input.secondary:hover[type=button], input.secondary:hove
 button.info, input.info[type=button], input.info[type=submit], a.info.button {
   background-color: #51a1ec;
   border: 1px solid #51a1ec;
-  color: #222;
+  color: #18212f;
 }
 
 button.info:hover, input.info:hover[type=button], input.info:hover[type=submit], a.info.button:hover {
@@ -194,7 +193,7 @@ button.info:hover, input.info:hover[type=button], input.info:hover[type=submit],
 button.success, input.success[type=button], input.success[type=submit], a.success.button {
   background-color: #05C16C;
   border: 1px solid #05C16C;
-  color: #f5f5f5;
+  color: ghostwhite;
 }
 
 button.success:hover, input.success:hover[type=button], input.success:hover[type=submit], a.success.button:hover {
@@ -204,7 +203,7 @@ button.success:hover, input.success:hover[type=button], input.success:hover[type
 button.warn, input.warn[type=button], input.warn[type=submit], a.warn.button {
   background-color: #E1BB22;
   border: 1px solid #E1BB22;
-  color: #222;
+  color: #18212f;
 }
 
 button.warn:hover, input.warn:hover[type=button], input.warn:hover[type=submit], a.warn.button:hover {
@@ -214,7 +213,7 @@ button.warn:hover, input.warn:hover[type=button], input.warn:hover[type=submit],
 button.error, input.error[type=button], input.error[type=submit], a.error.button {
   background-color: #E90000;
   border: 1px solid #E90000;
-  color: #f5f5f5;
+  color: ghostwhite;
 }
 
 button.error:hover, input.error:hover[type=button], input.error:hover[type=submit], a.error.button:hover {
@@ -224,7 +223,7 @@ button.error:hover, input.error:hover[type=button], input.error:hover[type=submi
 button.light, input.light[type=button], input.light[type=submit], a.light.button {
   background-color: #f5f5f5;
   border: 1px solid #f5f5f5;
-  color: #222;
+  color: #18212f;
 }
 
 button.light:hover, input.light:hover[type=button], input.light:hover[type=submit], a.light.button:hover {
@@ -232,13 +231,13 @@ button.light:hover, input.light:hover[type=button], input.light:hover[type=submi
 }
 
 button.dark, input.dark[type=button], input.dark[type=submit], a.dark.button {
-  background-color: #222;
-  border: 1px solid #222;
-  color: #f5f5f5;
+  background-color: #18212f;
+  border: 1px solid #18212f;
+  color: ghostwhite;
 }
 
 button.dark:hover, input.dark:hover[type=button], input.dark:hover[type=submit], a.dark.button:hover {
-  background-color: #131313;
+  background-color: #0e131b;
 }
 
 button.small, input.small[type=button], input.small[type=submit], a.small.button {
@@ -262,7 +261,7 @@ table {
 }
 
 table thead tr {
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid #18212f;
 }
 
 table tbody tr {
@@ -292,73 +291,137 @@ table.slim td, table.slim th {
 
 table.primary thead th {
   background-color: #0808c9;
-  color: #f5f5f5;
+  color: ghostwhite;
 }
 
 table.secondary thead th {
   background-color: #9e9e9e;
-  color: #222;
+  color: #18212f;
 }
 
 table.info thead th {
   background-color: #51a1ec;
-  color: #222;
+  color: #18212f;
 }
 
 table.success thead th {
   background-color: #05C16C;
-  color: #f5f5f5;
+  color: ghostwhite;
 }
 
 table.warn thead th {
   background-color: #E1BB22;
-  color: #222;
+  color: #18212f;
 }
 
 table.error thead th {
   background-color: #E90000;
-  color: #f5f5f5;
+  color: ghostwhite;
 }
 
 table.light thead th {
   background-color: #f5f5f5;
-  color: #222;
+  color: #18212f;
 }
 
 table.dark thead th {
-  background-color: #222;
-  color: #f5f5f5;
+  background-color: #18212f;
+  color: ghostwhite;
 }
 
 .card {
   background-color: white;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  margin: 1rem;
-  padding: 1rem;
+  margin: 1.2rem;
+  padding: 0.9rem 1rem;
 }
 
-.card .head {
+.card.primary {
+  background-color: #0808c9;
+  color: ghostwhite;
+}
+
+.card.secondary {
+  background-color: #9e9e9e;
+  color: #18212f;
+}
+
+.card.info {
+  background-color: #51a1ec;
+  color: #18212f;
+}
+
+.card.success {
+  background-color: #05C16C;
+  color: ghostwhite;
+}
+
+.card.warn {
+  background-color: #E1BB22;
+  color: #18212f;
+}
+
+.card.error {
+  background-color: #E90000;
+  color: ghostwhite;
+}
+
+.card.light {
+  background-color: #f5f5f5;
+  color: #18212f;
+}
+
+.card.dark {
+  background-color: #18212f;
+  color: ghostwhite;
+}
+
+.card .card-head {
   width: auto;
   border-bottom: 1px solid #cfcfcf;
 }
 
-.card .head h3 {
+.card .card-head h3 {
   font-size: 1.25rem;
 }
 
-.card .body {
+.card .card-body {
   padding: 0.5rem;
 }
 
-.card .foot {
+.card .card-foot, .card .card-foot-2, .card .card-foot-3 {
   border-top: 1px solid #cfcfcf;
-  padding: 0.75rem 0.75rem 0 0;
+  padding: 0.75rem 0 0 0;
+  display: -ms-grid;
+  display: grid;
+}
+
+.card .card-foot-2 {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.card .card-foot-3 {
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card .card-foot .align-left, .card .card-foot-2 .align-left, .card .card-foot-3 .align-left, .card .card-foot .card-foot-left, .card .card-foot-2 .card-foot-left, .card .card-foot-3 .card-foot-left {
+  text-align: left;
+}
+
+.card .card-foot .align-right, .card .card-foot-2 .align-right, .card .card-foot-3 .align-right, .card .card-foot .card-foot-right, .card .card-foot-2 .card-foot-right, .card .card-foot-3 .card-foot-right {
+  text-align: right;
+}
+
+.card .card-foot .align-center, .card .card-foot-2 .align-center, .card .card-foot-3 .align-center, .card .card-foot .card-foot-center, .card .card-foot-2 .card-foot-center, .card .card-foot-3 .card-foot-center {
+  text-align: center;
 }
 
 .badge {
   background-color: #e8e8e8;
-  color: #222;
+  color: #18212f;
   border-radius: 4px;
   font-size: 0.75rem;
   padding: 0.2rem 0.5rem;
@@ -376,42 +439,42 @@ table.dark thead th {
 
 .badge.primary {
   background-color: #0808c9;
-  color: #f5f5f5;
+  color: ghostwhite;
 }
 
 .badge.secondary {
   background-color: #9e9e9e;
-  color: #222;
+  color: #18212f;
 }
 
 .badge.info {
   background-color: #51a1ec;
-  color: #222;
+  color: #18212f;
 }
 
 .badge.success {
   background-color: #05C16C;
-  color: #f5f5f5;
+  color: ghostwhite;
 }
 
 .badge.warn {
   background-color: #E1BB22;
-  color: #222;
+  color: #18212f;
 }
 
 .badge.error {
   background-color: #E90000;
-  color: #f5f5f5;
+  color: ghostwhite;
 }
 
 .badge.light {
   background-color: #f5f5f5;
-  color: #222;
+  color: #18212f;
 }
 
 .badge.dark {
-  background-color: #222;
-  color: #f5f5f5;
+  background-color: #18212f;
+  color: ghostwhite;
 }
 
 .badge.small {
@@ -486,7 +549,7 @@ input[type=text], input[type=number], input[type=date], input[type=datetime], in
 }
 
 .message.dark {
-  border-color: #222;
+  border-color: #18212f;
 }
 
 .container {
