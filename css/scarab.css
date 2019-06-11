@@ -146,6 +146,8 @@ button, input[type=button], input[type=submit], a.button {
   font-size: 1rem;
   padding: 0.4rem 0.7rem;
   cursor: pointer;
+  -webkit-transition: background-color .2s;
+  transition: background-color .2s;
 }
 
 button:hover, input:hover[type=button], input:hover[type=submit], a.button:hover {
