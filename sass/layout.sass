@@ -3,8 +3,58 @@
     margin: auto
     padding: 1rem
 
-// .right
-//     float: right;
+@for $i from 1 through 10
+    .margin-#{$i * 5}
+        margin: $i * 5px
+    .margin-top-#{$i * 5}
+        margin-top: $i * 5px
+    .margin-right-#{$i * 5}
+        margin-right: $i * 5px
+    .margin-bottom-#{$i * 5}
+        margin-bottom: $i * 5px
+    .margin-left-#{$i * 5}
+        margin-left: $i * 5px
+    .padding-#{$i * 5}
+        padding: $i * 5px
+    .padding-top-#{$i * 5}
+        padding-top: $i * 5px
+    .padding-right-#{$i * 5}
+        padding-right: $i * 5px
+    .padding-bottom-#{$i * 5}
+        padding-bottom: $i * 5px
+    .padding-left-#{$i * 5}
+        padding-left: $i * 5px
 
-// .left
-//     float: left;
+@for $i from 1 through 5
+    .m-#{$i}
+        margin: $i * 0.25rem
+    .mx-#{$i}
+        margin-left: $i * 0.25rem
+        margin-right: $i * 0.25rem
+    .my-#{$i}
+        margin-top: $i * 0.25rem
+        margin-bottom: $i * 0.25rem
+    .mt-#{$i}
+        margin-top: $i * 0.25rem
+    .mr-#{$i}
+        margin-right: $i * 0.25rem
+    .mb-#{$i}
+        margin-bottom: $i * 0.25rem
+    .ml-#{$i}
+        margin-left: $i * 0.25rem
+    .p-#{$i}
+        padding: $i * 0.25rem
+    .px-#{$i}
+        padding-left: $i * 0.25rem
+        padding-right: $i * 0.25rem
+    .py-#{$i}
+        padding-top: $i * 0.25rem
+        padding-bottom: $i * 0.25rem
+    .pt-#{$i}
+        padding-top: $i * 0.25rem
+    .pr-#{$i}
+        padding-right: $i * 0.25rem
+    .pb-#{$i}
+        padding-bottom: $i * 0.25rem
+    .pl-#{$i}
+        padding-left: $i * 0.25rem
