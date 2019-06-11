@@ -10,6 +10,8 @@ button
     font-size: 1rem
     padding: 0.4rem 0.7rem
     cursor: pointer
+    &:hover
+        @include darken-6($bg-button)
 
     &.square
         border-radius: 0px;
@@ -58,6 +60,20 @@ button
         @include set-text-color($error)
         &:hover
             @include darken-6($error)
+
+    &.light
+        background-color: $bg-light
+        border: 1px solid $bg-light
+        @include set-text-color($bg-light)
+        &:hover
+            @include darken-6($bg-light)
+
+    &.dark
+        background-color: $bg-dark
+        border: 1px solid $bg-dark
+        @include set-text-color($bg-dark)
+        &:hover
+            @include darken-6($bg-dark)
 
     &.small
         font-size: 0.75rem

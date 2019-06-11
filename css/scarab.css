@@ -149,6 +149,10 @@ button, input[type=button], input[type=submit], a.button {
   cursor: pointer;
 }
 
+button:hover, input:hover[type=button], input:hover[type=submit], a.button:hover {
+  background-color: #d9d9d9;
+}
+
 button.square, input.square[type=button], input.square[type=submit], a.square.button {
   border-radius: 0px;
 }
@@ -215,6 +219,26 @@ button.error, input.error[type=button], input.error[type=submit], a.error.button
 
 button.error:hover, input.error:hover[type=button], input.error:hover[type=submit], a.error.button:hover {
   background-color: #ca0000;
+}
+
+button.light, input.light[type=button], input.light[type=submit], a.light.button {
+  background-color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  color: #222;
+}
+
+button.light:hover, input.light:hover[type=button], input.light:hover[type=submit], a.light.button:hover {
+  background-color: #e6e6e6;
+}
+
+button.dark, input.dark[type=button], input.dark[type=submit], a.dark.button {
+  background-color: #222;
+  border: 1px solid #222;
+  color: #f5f5f5;
+}
+
+button.dark:hover, input.dark:hover[type=button], input.dark:hover[type=submit], a.dark.button:hover {
+  background-color: #131313;
 }
 
 button.small, input.small[type=button], input.small[type=submit], a.small.button {
@@ -296,6 +320,16 @@ table.error thead th {
   color: #f5f5f5;
 }
 
+table.light thead th {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+table.dark thead th {
+  background-color: #222;
+  color: #f5f5f5;
+}
+
 .card {
   background-color: white;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
@@ -367,6 +401,16 @@ table.error thead th {
 
 .badge.error {
   background-color: #E90000;
+  color: #f5f5f5;
+}
+
+.badge.light {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+.badge.dark {
+  background-color: #222;
   color: #f5f5f5;
 }
 
