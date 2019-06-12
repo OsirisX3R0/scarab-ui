@@ -12,7 +12,7 @@ button
     cursor: pointer
     transition: background-color .2s
     &:hover
-        @include darken-6($bg-button)
+        @include btn-darken($bg-button)
 
     &.square
         border-radius: 0px;
@@ -21,60 +21,28 @@ button
         border-radius: 20px;
 
     &.primary
-        background-color: $primary
-        border: 1px solid $primary
-        @include set-text-color($primary)
-        &:hover
-            @include darken-6($primary)
+        @include btn-color($primary)
 
     &.secondary
-        background-color: $secondary
-        border: 1px solid $secondary
-        @include set-text-color($secondary)
-        &:hover
-            @include darken-6($secondary)
+        @include btn-color($secondary)
 
     &.info
-        background-color: $info
-        border: 1px solid $info
-        @include set-text-color($info)
-        &:hover
-            @include darken-6($info)
+        @include btn-color($info)
 
     &.success
-        background-color: $success
-        border: 1px solid $success
-        @include set-text-color($success)
-        &:hover
-            @include darken-6($success)
+        @include btn-color($success)
 
     &.warn
-        background-color: $warn
-        border: 1px solid $warn
-        @include set-text-color($warn)
-        &:hover
-            @include darken-6($warn)
+        @include btn-color($warn)
 
     &.error
-        background-color: $error
-        border: 1px solid $error
-        @include set-text-color($error)
-        &:hover
-            @include darken-6($error)
+        @include btn-color($error)
 
     &.light
-        background-color: $bg-light
-        border: 1px solid $bg-light
-        @include set-text-color($bg-light)
-        &:hover
-            @include darken-6($bg-light)
+        @include btn-color($bg-light)
 
     &.dark
-        background-color: $bg-dark
-        border: 1px solid $bg-dark
-        @include set-text-color($bg-dark)
-        &:hover
-            @include darken-6($bg-dark)
+        @include btn-color($bg-dark)
 
     &.small
         font-size: 0.75rem
@@ -90,8 +58,108 @@ input[type=button]
 input[type=submit]
     @extend button
 
-a
-    &.btn
-        @extend button
+.btn
+    @extend button
+    padding: 0.5rem 0.8rem;
+    text-decoration: none
+
+.btn-group
+    display: inline-grid
+    grid-auto-flow: column
+
+    &.square
+        button
+            border-radius: 0
+            &:first-child
+                border-radius: 0
+            &:last-child
+                border-radius: 0
+
+    &.pill
+        button
+            border-radius: 0
+            &:first-child
+                border-radius: 1rem 0px 0px 1rem
+            &:last-child
+                border-radius: 0px 1rem 1rem 0px
+
+    .active
+        &.primary
+            @include btn-darken($primary)
+        &.secondary
+            @include btn-darken($secondary)
+        &.info
+            @include btn-darken($info)
+        &.success
+            @include btn-darken($success)
+        &.warn
+            @include btn-darken($warn)
+        &.error
+            @include btn-darken($error)
+        &.light
+            @include btn-darken($bg-light)
+        &.dark
+            @include btn-darken($bg-dark)
+
+    button
+        border-radius: 0
+        &:first-child
+            border-radius: 4px 0px 0px 4px
+        &:last-child
+            border-radius: 0px 4px 4px 0px
+
+
+    input[type=button]
+        border-radius: 0
+        &:first-child
+            border-radius: 4px 0px 0px 4px
+        &:last-child
+            border-radius: 0px 4px 4px 0px
+
+    input[type=submit]
+        border-radius: 0
+        &:first-child
+            border-radius: 4px 0px 0px 4px
+        &:last-child
+            border-radius: 0px 4px 4px 0px
+
+    .btn
+        border-radius: 0
+        &:first-child
+            border-radius: 4px 0px 0px 4px
+        &:last-child
+            border-radius: 0px 4px 4px 0px
         text-decoration: none
 
+    &.primary
+        button
+            @extend button.primary
+        @include set-active($primary)
+    &.secondary
+        button
+            @extend button.secondary
+        @include set-active($secondary)
+    &.info
+        button
+            @extend button.info
+        @include set-active($info)
+    &.success
+        button
+            @extend button.success
+        @include set-active($success)
+    &.warn
+        button
+            @extend button.warn
+        @include set-active($warn)
+    &.error
+        button
+            @extend button.error
+        @include set-active($error)
+    &.light
+        button
+            @extend button.light
+        @include set-active($bg-light)
+    &.dark
+        button
+            @extend button.dark
+        @include set-active($bg-dark)

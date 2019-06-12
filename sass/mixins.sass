@@ -12,5 +12,15 @@
   font-weight: 400
   line-height: 20px
 
-@mixin darken-6($color)
-  background-color: darken($color, 6%)
+@mixin btn-darken($color)
+  background-color: darken($color, 12%)
+
+@mixin set-active($color)
+  .active
+    @include btn-darken($color)
+
+@mixin btn-color($color)
+  background-color: $color
+  @include set-text-color($color)
+  &:hover
+      @include btn-darken($color)
