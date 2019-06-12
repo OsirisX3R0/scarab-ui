@@ -1,0 +1,43 @@
+@import variables
+@import mixins
+@import buttons
+
+ol
+
+    margin: 0 0 1rem 1rem
+    ol
+        margin-left: 1rem
+    ul
+        margin-left: 1rem
+
+
+ul
+    @extend ol
+
+    &.pagination
+        list-style-type: none
+        display: inline-grid
+        grid-auto-flow: column
+
+        li
+            &:first-child
+                a
+                    border-radius: 4px 0px 0px 4px
+            &:last-child
+                a
+                    border-width: 1px 1px 1px 1px
+                    border-radius: 0px 4px 4px 0px
+            a
+                border-style: solid
+                border-color: $table-border
+                border-width: 1px 0px 1px 1px
+                border-radius: 0
+                font-size: 1rem
+                padding: 0.4rem 0.7rem
+                transition: background-color color .2s
+
+                &:hover
+                    text-decoration: none
+                    background-color: $primary
+                    color: $bg-light
+        

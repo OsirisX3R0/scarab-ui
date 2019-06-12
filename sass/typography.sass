@@ -29,6 +29,27 @@ p
     font-size: 1rem
     margin-bottom: 0.75rem
 
+a
+    color: $primary
+    text-decoration: none
+    transition: text-decoration .2s
+    .secondary
+        color: $secondary
+    .info
+        color: $info
+    .success
+        color: $success
+    .warn
+        color: $warn
+    .error
+        color: $error
+    .light
+        color: $bg-light
+    .dark
+        color: $bg-dark
+    &:hover
+        text-decoration: underline
+
 mark
     background-color: yellow
     &.primary
