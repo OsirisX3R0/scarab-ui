@@ -5,6 +5,13 @@
           box-sizing: border-box;
 }
 
+:root {
+  font-family: 'Montserrat-Regular', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 body {
   background-color: #f5f5f5;
   color: #18212f;
@@ -12,8 +19,8 @@ body {
 
 hr {
   height: 1px;
-  color: #cfcfcf;
-  background-color: #cfcfcf;
+  color: #c7c7c7;
+  background-color: #c7c7c7;
   border: none;
   margin: 0.75rem 0;
 }
@@ -27,12 +34,6 @@ hr {
   src: url("../fonts/Montserrat-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-}
-
-body {
-  font-family: 'Montserrat-Regular', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
 }
 
 h1 {
@@ -137,11 +138,13 @@ code {
 }
 
 button, input[type=button], input[type=submit], a.button {
-  background-color: #e8e8e8;
+  background-color: #e1e1e1;
   color: #18212f;
   font-family: 'Montserrat-Regular', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
+  border-width: 0;
   border-radius: 4px;
   font-size: 1rem;
   padding: 0.4rem 0.7rem;
@@ -151,7 +154,7 @@ button, input[type=button], input[type=submit], a.button {
 }
 
 button:hover, input:hover[type=button], input:hover[type=submit], a.button:hover {
-  background-color: #d9d9d9;
+  background-color: #d1d1d1;
 }
 
 button.square, input.square[type=button], input.square[type=submit], a.square.button {
@@ -267,7 +270,7 @@ table thead tr {
 }
 
 table tbody tr {
-  border-bottom: 1px solid #cfcfcf;
+  border-bottom: 1px solid #c7c7c7;
 }
 
 table tbody tr:last-child {
@@ -333,6 +336,7 @@ table.dark thead th {
 
 .card {
   background-color: white;
+  border-radius: 3px;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   margin: 1.2rem;
@@ -340,37 +344,31 @@ table.dark thead th {
 }
 
 .card.primary {
-  background-color: #0808c9;
-  color: ghostwhite;
+  border-bottom: 3px solid #0808c9;
 }
 
 .card.secondary {
-  background-color: #9e9e9e;
-  color: #18212f;
+  border-bottom: 3px solid #9e9e9e;
 }
 
 .card.info {
-  background-color: #51a1ec;
-  color: #18212f;
+  border-bottom: 3px solid #51a1ec;
 }
 
 .card.success {
-  background-color: #05C16C;
-  color: ghostwhite;
+  border-bottom: 3px solid #05C16C;
 }
 
 .card.warn {
-  background-color: #E1BB22;
-  color: #18212f;
+  border-bottom: 3px solid #E1BB22;
 }
 
 .card.error {
-  background-color: #E90000;
-  color: ghostwhite;
+  border-bottom: 3px solid #E90000;
 }
 
 .card.light {
-  background-color: #f5f5f5;
+  border-bottom: 3px solid gainsboro;
   color: #18212f;
 }
 
@@ -381,7 +379,7 @@ table.dark thead th {
 
 .card .card-head {
   width: auto;
-  border-bottom: 1px solid #cfcfcf;
+  border-bottom: 1px solid #c7c7c7;
 }
 
 .card .card-head h3 {
@@ -392,37 +390,49 @@ table.dark thead th {
   padding: 0.5rem;
 }
 
-.card .card-foot, .card .card-foot-2, .card .card-foot-3 {
-  border-top: 1px solid #cfcfcf;
+.card .card-foot, .card .card-foot.two, .card .card-foot.three {
+  border-top: 1px solid #c7c7c7;
   padding: 0.75rem 0 0 0;
   display: -ms-grid;
   display: grid;
 }
 
-.card .card-foot-2 {
+.card .two.card-foot {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
 }
 
-.card .card-foot-3 {
+.card .three.card-foot {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
 }
 
-.card .card-foot .align-left, .card .card-foot-2 .align-left, .card .card-foot-3 .align-left, .card .card-foot .card-foot-left, .card .card-foot-2 .card-foot-left, .card .card-foot-3 .card-foot-left {
+.card .card-foot .foot-left, .card .card-foot .card-foot-left {
   text-align: left;
 }
 
-.card .card-foot .align-right, .card .card-foot-2 .align-right, .card .card-foot-3 .align-right, .card .card-foot .card-foot-right, .card .card-foot-2 .card-foot-right, .card .card-foot-3 .card-foot-right {
+.card .card-foot.left {
+  text-align: left;
+}
+
+.card .card-foot .foot-right, .card .card-foot .card-foot-right {
   text-align: right;
 }
 
-.card .card-foot .align-center, .card .card-foot-2 .align-center, .card .card-foot-3 .align-center, .card .card-foot .card-foot-center, .card .card-foot-2 .card-foot-center, .card .card-foot-3 .card-foot-center {
+.card .card-foot.right {
+  text-align: right;
+}
+
+.card .card-foot .foot-center, .card .card-foot .card-foot-center {
+  text-align: center;
+}
+
+.card .card-foot.center {
   text-align: center;
 }
 
 .badge {
-  background-color: #e8e8e8;
+  background-color: #e1e1e1;
   color: #18212f;
   border-radius: 4px;
   font-size: 0.75rem;
@@ -490,7 +500,7 @@ table.dark thead th {
 }
 
 input[type=text], input[type=number], input[type=date], input[type=datetime], input[type=color], input[type=radio], input[type=checkbox], select {
-  border: 1px solid gainsboro;
+  border: 1px solid #d4d4d4;
   border-radius: 3px;
   padding: 0.25rem;
 }

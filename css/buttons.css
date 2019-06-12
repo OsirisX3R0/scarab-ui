@@ -1,9 +1,11 @@
 button, input[type=button], input[type=submit], a.button {
-  background-color: #e8e8e8;
+  background-color: #e1e1e1;
   color: #18212f;
   font-family: 'Montserrat-Regular', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
+  border-width: 0;
   border-radius: 4px;
   font-size: 1rem;
   padding: 0.4rem 0.7rem;
@@ -13,7 +15,7 @@ button, input[type=button], input[type=submit], a.button {
 }
 
 button:hover, input:hover[type=button], input:hover[type=submit], a.button:hover {
-  background-color: #d9d9d9;
+  background-color: #d1d1d1;
 }
 
 button.square, input.square[type=button], input.square[type=submit], a.square.button {

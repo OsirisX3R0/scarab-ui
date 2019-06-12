@@ -3,36 +3,31 @@
 
 .card
     background-color: white
+    border-radius: 3px
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
     margin: 1.2rem
     padding: 0.9rem 1rem
 
     &.primary
-        background-color: $primary
-        @include set-text-color($primary)
+        border-bottom: 3px solid $primary
 
     &.secondary
-        background-color: $secondary
-        @include set-text-color($secondary)
+        border-bottom: 3px solid $secondary
 
     &.info
-        background-color: $info
-        @include set-text-color($info)
+        border-bottom: 3px solid $info
 
     &.success
-        background-color: $success
-        @include set-text-color($success)
+        border-bottom: 3px solid $success
 
     &.warn
-        background-color: $warn
-        @include set-text-color($warn)
+        border-bottom: 3px solid $warn
 
     &.error
-        background-color: $error
-        @include set-text-color($error)
+        border-bottom: 3px solid $error
 
     &.light
-        background-color: $bg-light
+        border-bottom: 3px solid darken($bg-light, 10%)
         @include set-text-color($bg-light)
 
     &.dark
@@ -54,30 +49,39 @@
         padding: 0.75rem 0 0 0
         display: grid
 
-        &-2
+        &.two
             @extend .card-foot
             grid-template-columns: 1fr 1fr
 
-        &-3
+        &.three
             @extend .card-foot
             grid-template-columns: 1fr 1fr 1fr
 
-        .align-left
+        .foot-left
+            text-align: left
+
+        &.left
             text-align: left
 
         &-left
-            @extend .align-left
+            @extend .foot-left
 
-        .align-right
+        .foot-right
+            text-align: right
+
+        &.right
             text-align: right
 
         &-right
-            @extend .align-right
+            @extend .foot-right
 
-        .align-center
+        .foot-center
+            text-align: center
+
+        &.center
             text-align: center
 
         &-center
-            @extend .align-center
+            @extend .foot-center
 
     
