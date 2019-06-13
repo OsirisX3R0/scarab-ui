@@ -1087,10 +1087,54 @@ table.dark thead th {
   padding: 0.3rem 0.6rem;
 }
 
-input[type=text], input[type=number], input[type=date], input[type=datetime], input[type=color], input[type=radio], input[type=checkbox], select {
+input[type=text], input[type=number], input[type=date], input[type=datetime], input[type=color], input[type=password], input[type=radio], input[type=checkbox], select {
+  font-family: 'Montserrat-Regular', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
   border: 1px solid #d4d4d4;
   border-radius: 3px;
-  padding: 0.25rem;
+  padding: 0.5rem;
+}
+
+label.check input, label.radio input {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+label.check input:checked ~ span, label.radio input:checked ~ span {
+  background-color: #0808c9;
+}
+
+label.check span, label.radio span {
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  cursor: pointer;
+}
+
+label.check span::after, label.radio span::after {
+  position: absolute;
+  content: "";
+  left: 12px;
+  top: 12px;
+  width: 0px;
+  height: 0px;
+  border-radius: 5px;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(0deg) scale(0);
+          transform: rotate(0deg) scale(0);
+  opacity: 1;
+}
+
+label.radio span {
+  border-radius: 1rem;
 }
 
 .form-group {
@@ -1111,6 +1155,7 @@ input[type=text], input[type=number], input[type=date], input[type=datetime], in
 }
 
 .message {
+  background-color: #fafafa;
   border-width: 0 0 0 3px;
   border-style: solid;
   border-radius: 3px;
