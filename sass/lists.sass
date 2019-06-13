@@ -18,6 +18,7 @@ ul
         list-style-type: none
         display: inline-grid
         grid-auto-flow: column
+            
 
         li
             &:first-child
@@ -34,10 +35,51 @@ ul
                 border-radius: 0
                 font-size: 1rem
                 padding: 0.4rem 0.7rem
-                transition: background-color color .2s
+                transition: background-color.2s, color .2s
 
                 &:hover
                     text-decoration: none
                     background-color: $primary
-                    color: $bg-light
+                    @include set-text-color($primary)
+
+        &.pill
+            li
+                &:first-child
+                    a
+                        border-radius: 1rem 0px 0px 1rem
+                &:last-child
+                    a
+                        border-radius: 0px 1rem 1rem 0px
+
+        &.square
+            li
+                a
+                    border-radius: 0
+
+        &.rounded
+            li
+                a
+                    border-width: 0
+                    border-radius: 1rem
+                    margin: 0 0.75rem 0 0
+                &:last-child
+                    a
+                        margin: 0 0 0 0
+
+
+        &.secondary
+            @include page-hover($secondary)
+        &.info
+            @include page-hover($info)
+        &.success
+            @include page-hover($success)
+        &.warn
+            @include page-hover($warn)
+        &.error
+            @include page-hover($error)
+        &.light
+            @include page-hover($bg-light)
+        &.dark
+            @include page-hover($bg-dark)
+
         
