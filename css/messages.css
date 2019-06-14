@@ -1,0 +1,43 @@
+.message {
+  background-color: #fafafa;
+  border-width: 0 0 0 3px;
+  border-style: solid;
+  border-radius: 3px;
+  margin-bottom: 0.75rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+.message.primary {
+  border-color: #0808c9;
+}
+
+.message.secondary {
+  border-color: #9e9e9e;
+}
+
+.message.info {
+  border-color: #51a1ec;
+}
+
+.message.success {
+  border-color: #05C16C;
+}
+
+.message.warn {
+  border-color: #E1BB22;
+}
+
+.message.error {
+  border-color: #E90000;
+}
+
+.message.light {
+  border-color: gainsboro;
+}
+
+.message.dark {
+  border-color: #18212f;
+}
+/*# sourceMappingURL=messages.css.map */
