@@ -7,22 +7,28 @@
         height: 2rem
         display: inline-grid
         .inner
+            width: 2rem
+            height: 2rem
             background-color: #ccc
             border-radius: 50%
             place-self: center
-            animation: 1s infinite load
+            animation: 1s linear infinite pulse
 
         &.sm
             width: 1.5rem
             height: 1.5rem
             .inner
-                animation: 1s infinite load-sm
+                width: 1.5rem
+                height: 1.5rem
+                animation: 1s linear infinite pulse
 
         &.lg
             width: 2.75rem
             height: 2.75rem
             .inner
-                animation: 1s infinite load-lg
+                width: 2.75rem
+                height: 2.75rem
+                animation: 1s linear infinite pulse
 
         &.primary
             .inner
@@ -134,41 +140,35 @@
         .inner
             @include set-background-color($bg-dark)
     
-@keyframes load-sm
+// @keyframes pulse-sm
+//     from
+//         transform: scale(0)
+//         opacity: 0
+//     50%
+//         opacity: 1
+//     to
+//         transform: scale(1)
+//         opacity: 0
+    
+@keyframes pulse
     from
-        width: 0
-        height: 0
+        transform: scale(0)
         opacity: 0
     50%
         opacity: 1
     to
-        width: 1.5rem
-        height: 1.5rem
+        transform: scale(1)
         opacity: 0
     
-@keyframes load
-    from
-        width: 0
-        height: 0
-        opacity: 0
-    50%
-        opacity: 1
-    to
-        width: 2rem
-        height: 2rem
-        opacity: 0
-    
-@keyframes load-lg
-    from
-        width: 0
-        height: 0
-        opacity: 0
-    50%
-        opacity: 1
-    to
-        width: 2.75rem
-        height: 2.75rem
-        opacity: 0
+// @keyframes pulse-lg
+//     from
+//         transform: scale(0)
+//         opacity: 0
+//     50%
+//         opacity: 1
+//     to
+//         transform: scale(1)
+//         opacity: 0
 
 @keyframes spin
     from

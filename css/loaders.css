@@ -6,11 +6,13 @@
 }
 
 .loader.pulse .inner {
+  width: 2rem;
+  height: 2rem;
   background-color: #ccc;
   border-radius: 50%;
   place-self: center;
-  -webkit-animation: 1s infinite load;
-          animation: 1s infinite load;
+  -webkit-animation: 1s linear infinite pulse;
+          animation: 1s linear infinite pulse;
 }
 
 .loader.pulse.sm {
@@ -19,8 +21,10 @@
 }
 
 .loader.pulse.sm .inner {
-  -webkit-animation: 1s infinite load-sm;
-          animation: 1s infinite load-sm;
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-animation: 1s linear infinite pulse;
+          animation: 1s linear infinite pulse;
 }
 
 .loader.pulse.lg {
@@ -29,8 +33,10 @@
 }
 
 .loader.pulse.lg .inner {
-  -webkit-animation: 1s infinite load-lg;
-          animation: 1s infinite load-lg;
+  width: 2.75rem;
+  height: 2.75rem;
+  -webkit-animation: 1s linear infinite pulse;
+          animation: 1s linear infinite pulse;
 }
 
 .loader.pulse.primary .inner {
@@ -168,98 +174,34 @@
   background-color: #f5f5f5;
 }
 
-@-webkit-keyframes load-sm {
+@-webkit-keyframes pulse {
   from {
-    width: 0;
-    height: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
     opacity: 0;
   }
   50% {
     opacity: 1;
   }
   to {
-    width: 1.5rem;
-    height: 1.5rem;
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: 0;
   }
 }
 
-@keyframes load-sm {
+@keyframes pulse {
   from {
-    width: 0;
-    height: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
     opacity: 0;
   }
   50% {
     opacity: 1;
   }
   to {
-    width: 1.5rem;
-    height: 1.5rem;
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes load {
-  from {
-    width: 0;
-    height: 0;
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  to {
-    width: 2rem;
-    height: 2rem;
-    opacity: 0;
-  }
-}
-
-@keyframes load {
-  from {
-    width: 0;
-    height: 0;
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  to {
-    width: 2rem;
-    height: 2rem;
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes load-lg {
-  from {
-    width: 0;
-    height: 0;
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  to {
-    width: 2.75rem;
-    height: 2.75rem;
-    opacity: 0;
-  }
-}
-
-@keyframes load-lg {
-  from {
-    width: 0;
-    height: 0;
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  to {
-    width: 2.75rem;
-    height: 2.75rem;
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: 0;
   }
 }
