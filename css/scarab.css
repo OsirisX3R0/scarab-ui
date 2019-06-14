@@ -118,7 +118,7 @@ mark {
 
 mark.primary {
   background-color: #0808c9;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 mark.secondary {
@@ -133,17 +133,17 @@ mark.info {
 
 mark.success {
   background-color: #05C16C;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 mark.warn {
   background-color: #E1BB22;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 mark.error {
   background-color: #E90000;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 pre, code {
@@ -208,7 +208,7 @@ button.pill, input.pill[type=button], input.pill[type=submit], a.pill.btn {
 
 button.primary, input.primary[type=button], input.primary[type=submit], a.primary.btn, .btn-group.primary button, .btn-group.primary input[type=button], .btn-group.primary input[type=submit], .btn-group.primary a.btn {
   background-color: #0808c9;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 button.primary:hover, input.primary:hover[type=button], input.primary:hover[type=submit], a.primary.btn:hover, .btn-group.primary button:hover, .btn-group.primary input:hover[type=button], .btn-group.primary input:hover[type=submit], .btn-group.primary a.btn:hover {
@@ -235,7 +235,7 @@ button.info:hover, input.info:hover[type=button], input.info:hover[type=submit],
 
 button.success, input.success[type=button], input.success[type=submit], a.success.btn, .btn-group.success button, .btn-group.success input[type=button], .btn-group.success input[type=submit], .btn-group.success a.btn {
   background-color: #05C16C;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 button.success:hover, input.success:hover[type=button], input.success:hover[type=submit], a.success.btn:hover, .btn-group.success button:hover, .btn-group.success input:hover[type=button], .btn-group.success input:hover[type=submit], .btn-group.success a.btn:hover {
@@ -253,7 +253,7 @@ button.warn:hover, input.warn:hover[type=button], input.warn:hover[type=submit],
 
 button.error, input.error[type=button], input.error[type=submit], a.error.btn, .btn-group.error button, .btn-group.error input[type=button], .btn-group.error input[type=submit], .btn-group.error a.btn {
   background-color: #E90000;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 button.error:hover, input.error:hover[type=button], input.error:hover[type=submit], a.error.btn:hover, .btn-group.error button:hover, .btn-group.error input:hover[type=button], .btn-group.error input:hover[type=submit], .btn-group.error a.btn:hover {
@@ -271,7 +271,7 @@ button.light:hover, input.light:hover[type=button], input.light:hover[type=submi
 
 button.dark, input.dark[type=button], input.dark[type=submit], a.dark.btn, .btn-group.dark button, .btn-group.dark input[type=button], .btn-group.dark input[type=submit], .btn-group.dark a.btn {
   background-color: #212121;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 button.dark:hover, input.dark:hover[type=button], input.dark:hover[type=submit], a.dark.btn:hover, .btn-group.dark button:hover, .btn-group.dark input:hover[type=button], .btn-group.dark input:hover[type=submit], .btn-group.dark a.btn:hover {
@@ -466,7 +466,7 @@ button.pill, input.pill[type=button], input.pill[type=submit], a.pill.btn {
 
 button.primary, input.primary[type=button], input.primary[type=submit], a.primary.btn, .btn-group.primary button, .btn-group.primary input[type=button], .btn-group.primary input[type=submit], .btn-group.primary a.btn {
   background-color: #0808c9;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 button.primary:hover, input.primary:hover[type=button], input.primary:hover[type=submit], a.primary.btn:hover, .btn-group.primary button:hover, .btn-group.primary input:hover[type=button], .btn-group.primary input:hover[type=submit], .btn-group.primary a.btn:hover {
@@ -493,7 +493,7 @@ button.info:hover, input.info:hover[type=button], input.info:hover[type=submit],
 
 button.success, input.success[type=button], input.success[type=submit], a.success.btn, .btn-group.success button, .btn-group.success input[type=button], .btn-group.success input[type=submit], .btn-group.success a.btn {
   background-color: #05C16C;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 button.success:hover, input.success:hover[type=button], input.success:hover[type=submit], a.success.btn:hover, .btn-group.success button:hover, .btn-group.success input:hover[type=button], .btn-group.success input:hover[type=submit], .btn-group.success a.btn:hover {
@@ -511,7 +511,7 @@ button.warn:hover, input.warn:hover[type=button], input.warn:hover[type=submit],
 
 button.error, input.error[type=button], input.error[type=submit], a.error.btn, .btn-group.error button, .btn-group.error input[type=button], .btn-group.error input[type=submit], .btn-group.error a.btn {
   background-color: #E90000;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 button.error:hover, input.error:hover[type=button], input.error:hover[type=submit], a.error.btn:hover, .btn-group.error button:hover, .btn-group.error input:hover[type=button], .btn-group.error input:hover[type=submit], .btn-group.error a.btn:hover {
@@ -529,7 +529,7 @@ button.light:hover, input.light:hover[type=button], input.light:hover[type=submi
 
 button.dark, input.dark[type=button], input.dark[type=submit], a.dark.btn, .btn-group.dark button, .btn-group.dark input[type=button], .btn-group.dark input[type=submit], .btn-group.dark a.btn {
   background-color: #212121;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 button.dark:hover, input.dark:hover[type=button], input.dark:hover[type=submit], a.dark.btn:hover, .btn-group.dark button:hover, .btn-group.dark input:hover[type=button], .btn-group.dark input:hover[type=submit], .btn-group.dark a.btn:hover {
@@ -756,15 +756,15 @@ ul.pagination li a, ul.list ol.pagination li a {
 ul.pagination li a:hover, ul.list ol.pagination li a:hover {
   text-decoration: none;
   background-color: #0808c9;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 ul.pagination.pill li:first-child a, ul.list ol.pagination.pill li:first-child a {
-  border-radius: 1rem 0px 0px 1rem;
+  border-radius: 20px 0px 0px 20px;
 }
 
 ul.pagination.pill li:last-child a, ul.list ol.pagination.pill li:last-child a {
-  border-radius: 0px 1rem 1rem 0px;
+  border-radius: 0px 20px 20px 0px;
 }
 
 ul.pagination.square li a, ul.list ol.pagination.square li a {
@@ -808,7 +808,7 @@ ul.pagination.success li a, ul.list ol.pagination.success li a {
 
 ul.pagination.success li a:hover, ul.list ol.pagination.success li a:hover {
   background-color: #05C16C;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 ul.pagination.warn li a, ul.list ol.pagination.warn li a {
@@ -826,7 +826,7 @@ ul.pagination.error li a, ul.list ol.pagination.error li a {
 
 ul.pagination.error li a:hover, ul.list ol.pagination.error li a:hover {
   background-color: #E90000;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 ul.pagination.light li a, ul.list ol.pagination.light li a {
@@ -844,7 +844,7 @@ ul.pagination.dark li a, ul.list ol.pagination.dark li a {
 
 ul.pagination.dark li a:hover, ul.list ol.pagination.dark li a:hover {
   background-color: #212121;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 table {
@@ -884,7 +884,7 @@ table.slim td, table.slim th {
 
 table.primary thead th {
   background-color: #0808c9;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 table.secondary thead th {
@@ -899,7 +899,7 @@ table.info thead th {
 
 table.success thead th {
   background-color: #05C16C;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 table.warn thead th {
@@ -909,7 +909,7 @@ table.warn thead th {
 
 table.error thead th {
   background-color: #E90000;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 table.light thead th {
@@ -919,7 +919,7 @@ table.light thead th {
 
 table.dark thead th {
   background-color: #212121;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 .card {
@@ -961,8 +961,8 @@ table.dark thead th {
 }
 
 .card.dark {
-  background-color: #212121;
-  color: ghostwhite;
+  background-color: #3b3b3b;
+  color: #f5f5f5;
 }
 
 .card .card-head {
@@ -1039,7 +1039,7 @@ table.dark thead th {
 
 .badge.primary {
   background-color: #0808c9;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 .badge.secondary {
@@ -1054,7 +1054,7 @@ table.dark thead th {
 
 .badge.success {
   background-color: #05C16C;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 .badge.warn {
@@ -1064,7 +1064,7 @@ table.dark thead th {
 
 .badge.error {
   background-color: #E90000;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 .badge.light {
@@ -1074,7 +1074,7 @@ table.dark thead th {
 
 .badge.dark {
   background-color: #212121;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 .badge.small {
@@ -1195,6 +1195,294 @@ label.radio span {
 
 .message.dark {
   border-color: #212121;
+}
+
+.loader.pulse {
+  width: 2rem;
+  height: 2rem;
+  display: -ms-inline-grid;
+  display: inline-grid;
+}
+
+.loader.pulse .inner {
+  background-color: #ccc;
+  border-radius: 50%;
+  place-self: center;
+  -webkit-animation: 1s infinite load;
+          animation: 1s infinite load;
+}
+
+.loader.pulse.sm {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.loader.pulse.sm .inner {
+  -webkit-animation: 1s infinite load-sm;
+          animation: 1s infinite load-sm;
+}
+
+.loader.pulse.lg {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.loader.pulse.lg .inner {
+  -webkit-animation: 1s infinite load-lg;
+          animation: 1s infinite load-lg;
+}
+
+.loader.pulse.primary .inner {
+  background-color: #0808c9;
+}
+
+.loader.pulse.secondary .inner {
+  background-color: #9e9e9e;
+}
+
+.loader.pulse.info .inner {
+  background-color: #51a1ec;
+}
+
+.loader.pulse.success .inner {
+  background-color: #05C16C;
+}
+
+.loader.pulse.warn .inner {
+  background-color: #E1BB22;
+}
+
+.loader.pulse.error .inner {
+  background-color: #E90000;
+}
+
+.loader.pulse.light .inner {
+  background-color: gainsboro;
+}
+
+.loader.pulse.dark .inner {
+  background-color: #080808;
+}
+
+.loader.spin {
+  width: 2rem;
+  height: 2rem;
+  display: -ms-inline-grid;
+  display: inline-grid;
+}
+
+.loader.spin .inner {
+  display: inherit;
+}
+
+.loader.spin .inner::after {
+  content: "C";
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #ccc;
+  -webkit-animation: 1s linear infinite spin;
+          animation: 1s linear infinite spin;
+  place-self: center;
+}
+
+.loader.spin.sm {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.loader.spin.sm .inner::after {
+  font-size: 1.5rem;
+}
+
+.loader.spin.lg {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.loader.spin.lg .inner::after {
+  font-size: 2.75rem;
+}
+
+.loader.spin.primary .inner::after {
+  color: #0808c9;
+}
+
+.loader.spin.secondary .inner::after {
+  color: #9e9e9e;
+}
+
+.loader.spin.info .inner::after {
+  color: #51a1ec;
+}
+
+.loader.spin.success .inner::after {
+  color: #05C16C;
+}
+
+.loader.spin.warn .inner::after {
+  color: #E1BB22;
+}
+
+.loader.spin.error .inner::after {
+  color: #E90000;
+}
+
+.loader.spin.light .inner::after {
+  color: gainsboro;
+}
+
+.loader.spin.dark .inner::after {
+  color: #212121;
+}
+
+.primary .loader .inner {
+  background-color: #f5f5f5;
+}
+
+.secondary .loader .inner {
+  background-color: #212121;
+}
+
+.info .loader .inner {
+  background-color: #212121;
+}
+
+.success .loader .inner {
+  background-color: #f5f5f5;
+}
+
+.warn .loader .inner {
+  background-color: #212121;
+}
+
+.error .loader .inner {
+  background-color: #f5f5f5;
+}
+
+.light .loader .inner {
+  background-color: #212121;
+}
+
+.dark .loader .inner {
+  background-color: #f5f5f5;
+}
+
+@-webkit-keyframes load-sm {
+  from {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    width: 1.5rem;
+    height: 1.5rem;
+    opacity: 0;
+  }
+}
+
+@keyframes load-sm {
+  from {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    width: 1.5rem;
+    height: 1.5rem;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes load {
+  from {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    width: 2rem;
+    height: 2rem;
+    opacity: 0;
+  }
+}
+
+@keyframes load {
+  from {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    width: 2rem;
+    height: 2rem;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes load-lg {
+  from {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    width: 2.75rem;
+    height: 2.75rem;
+    opacity: 0;
+  }
+}
+
+@keyframes load-lg {
+  from {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    width: 2.75rem;
+    height: 2.75rem;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .container {

@@ -1,0 +1,177 @@
+@import variables
+@import mixins
+
+.loader
+    &.pulse
+        width: 2rem
+        height: 2rem
+        display: inline-grid
+        .inner
+            background-color: #ccc
+            border-radius: 50%
+            place-self: center
+            animation: 1s infinite load
+
+        &.sm
+            width: 1.5rem
+            height: 1.5rem
+            .inner
+                animation: 1s infinite load-sm
+
+        &.lg
+            width: 2.75rem
+            height: 2.75rem
+            .inner
+                animation: 1s infinite load-lg
+
+        &.primary
+            .inner
+                background-color: $primary
+        &.secondary
+            .inner
+                background-color: $secondary
+        &.info
+            .inner
+                background-color: $info
+        &.success
+            .inner
+                background-color: $success
+        &.warn
+            .inner
+                background-color: $warn
+        &.error
+            .inner
+                background-color: $error
+        &.light
+            .inner
+                background-color: darken($bg-light, 10%)
+        &.dark
+            .inner
+                background-color: darken($bg-dark, 10%)
+
+    &.spin        
+        width: 2rem
+        height: 2rem
+        display: inline-grid
+        .inner
+            display: inherit
+        .inner::after
+            content: "C"
+            font-size: 2rem
+            font-weight: bolder
+            color: #ccc
+            animation: 1s linear infinite spin
+            place-self: center
+
+        &.sm
+            width: 1.5rem
+            height: 1.5rem
+            .inner
+            .inner::after
+                font-size: 1.5rem
+        &.lg
+            width: 2.75rem
+            height: 2.75rem
+            .inner
+            .inner::after
+                font-size: 2.75rem
+
+        &.primary
+            .inner::after
+                color: $primary
+        &.secondary
+            .inner::after
+                color: $secondary
+        &.info
+            .inner::after
+                color: $info
+        &.success
+            .inner::after
+                color: $success
+        &.warn
+            .inner::after
+                color: $warn
+        &.error
+            .inner::after
+                color: $error
+        &.light
+            .inner::after
+                color: darken($bg-light, 10%)
+        &.dark
+            .inner::after
+                color: $bg-dark
+
+.primary
+    .loader
+        .inner
+            @include set-background-color($primary)
+.secondary
+    .loader
+        .inner
+            @include set-background-color($secondary)
+.info
+    .loader
+        .inner
+            @include set-background-color($info)
+.success
+    .loader
+        .inner
+            @include set-background-color($success)
+.warn
+    .loader
+        .inner
+            @include set-background-color($warn)
+.error
+    .loader
+        .inner
+            @include set-background-color($error)
+.light
+    .loader
+        .inner
+            @include set-background-color($bg-light)
+.dark
+    .loader
+        .inner
+            @include set-background-color($bg-dark)
+    
+@keyframes load-sm
+    from
+        width: 0
+        height: 0
+        opacity: 0
+    50%
+        opacity: 1
+    to
+        width: 1.5rem
+        height: 1.5rem
+        opacity: 0
+    
+@keyframes load
+    from
+        width: 0
+        height: 0
+        opacity: 0
+    50%
+        opacity: 1
+    to
+        width: 2rem
+        height: 2rem
+        opacity: 0
+    
+@keyframes load-lg
+    from
+        width: 0
+        height: 0
+        opacity: 0
+    50%
+        opacity: 1
+    to
+        width: 2.75rem
+        height: 2.75rem
+        opacity: 0
+
+@keyframes spin
+    from
+        transform: rotate(0deg)
+    to
+        transform: rotate(360deg)

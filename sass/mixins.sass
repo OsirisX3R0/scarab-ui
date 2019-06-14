@@ -4,7 +4,13 @@
   @if (lightness($color) > 50)
     color: $bg-dark // Lighter background, return dark color
   @else
-    color: ghostwhite // Darker background, return light color
+    color: $bg-light // Darker background, return light color
+    
+@mixin set-background-color($color)
+  @if (lightness($color) > 50)
+    background-color: $bg-dark
+  @else
+    background-color: $bg-light
 
 @mixin default-font
   font-family: 'Montserrat-Regular', Calibri, 'Trebuchet MS', sans-serif

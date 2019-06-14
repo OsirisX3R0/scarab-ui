@@ -31,8 +31,8 @@
         @include set-text-color($bg-light)
 
     &.dark
-        background-color: $bg-dark
-        @include set-text-color($bg-dark)
+        background-color: lighten($bg-dark, 10%)
+        @include set-text-color(lighten($bg-dark, 10%))
     
     .card-head
         width: auto
