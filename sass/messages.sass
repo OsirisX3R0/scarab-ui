@@ -1,8 +1,17 @@
 @import variables
 @import mixins
 
+body
+    &:not(.dark)
+        .message
+            background-color: #fff
+            @include set-text-color(#fff)
+    &.dark
+        .message
+            background-color: lighten($bg-dark, 5%)
+            @include set-text-color(lighten($bg-dark, 5%))
+
 .message
-    background-color: lighten($bg-light, 2%)
     border-width: 0 0 0 3px
     border-style: solid;
     border-radius: 3px

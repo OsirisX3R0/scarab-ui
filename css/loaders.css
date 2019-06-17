@@ -189,38 +189,6 @@ progress.dark::-webkit-progress-value {
   color: #212121;
 }
 
-.primary .loader .inner {
-  background-color: #f5f5f5;
-}
-
-.secondary .loader .inner {
-  background-color: #212121;
-}
-
-.info .loader .inner {
-  background-color: #212121;
-}
-
-.success .loader .inner {
-  background-color: #f5f5f5;
-}
-
-.warn .loader .inner {
-  background-color: #212121;
-}
-
-.error .loader .inner {
-  background-color: #f5f5f5;
-}
-
-.light .loader .inner {
-  background-color: #212121;
-}
-
-.dark .loader .inner {
-  background-color: #f5f5f5;
-}
-
 @-webkit-keyframes pulse {
   from {
     -webkit-transform: scale(0);

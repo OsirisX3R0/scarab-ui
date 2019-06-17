@@ -1,6 +1,44 @@
 @import variables
 @import mixins
 
+body
+    &:not(.dark)
+        table
+            thead
+                tr
+                    border-bottom: 1px solid darken($bg-light, 12%)
+            tbody
+                tr
+                    border-bottom: 1px solid darken($bg-light, 12%)
+            &.bg
+                tbody
+                    td
+                        background-color: darken($bg-light, 5%)
+            &.striped
+                tbody
+                    tr
+                        &:nth-child(odd)
+                            background-color: darken($bg-light, 5%)
+                            @include set-text-color($bg-light)
+    &.dark
+        table
+            thead
+                tr
+                    border-bottom: 1px solid lighten($bg-dark, 12%)
+            tbody
+                tr
+                    border-bottom: 1px solid lighten($bg-dark, 12%)
+            &.bg
+                tbody
+                    td
+                        background-color: lighten($bg-dark, 5%)
+            &.striped
+                tbody
+                    tr
+                        &:nth-child(odd)
+                            background-color: lighten($bg-dark, 5%)
+                            @include set-text-color($bg-dark)
+
 table
     width: 100%
     border-collapse: collapse
@@ -20,10 +58,15 @@ table
         @extend td
         font-weight: bold
 
-    &.striped
-        tbody
-            tr:nth-child(odd)
-                background-color: darken($bg-light, 5%)
+    body
+        &:not(.dark)
+            table
+
+    body
+        &.dark
+            table
+                
+
 
     &.slim
         td

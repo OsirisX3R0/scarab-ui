@@ -1,5 +1,14 @@
+body:not(.dark) .message {
+  background-color: #fff;
+  color: #212121;
+}
+
+body.dark .message {
+  background-color: #2e2e2e;
+  color: #f5f5f5;
+}
+
 .message {
-  background-color: #fafafa;
   border-width: 0 0 0 3px;
   border-style: solid;
   border-radius: 3px;
