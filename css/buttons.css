@@ -28,7 +28,7 @@ button.pill, input.pill[type=button], input.pill[type=submit], a.pill.btn {
 
 button.primary, input.primary[type=button], input.primary[type=submit], a.primary.btn, .btn-group.primary button, .btn-group.primary input[type=button], .btn-group.primary input[type=submit], .btn-group.primary a.btn {
   background-color: #0808c9;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 button.primary:hover, input.primary:hover[type=button], input.primary:hover[type=submit], a.primary.btn:hover, .btn-group.primary button:hover, .btn-group.primary input:hover[type=button], .btn-group.primary input:hover[type=submit], .btn-group.primary a.btn:hover {
@@ -55,7 +55,7 @@ button.info:hover, input.info:hover[type=button], input.info:hover[type=submit],
 
 button.success, input.success[type=button], input.success[type=submit], a.success.btn, .btn-group.success button, .btn-group.success input[type=button], .btn-group.success input[type=submit], .btn-group.success a.btn {
   background-color: #05C16C;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 button.success:hover, input.success:hover[type=button], input.success:hover[type=submit], a.success.btn:hover, .btn-group.success button:hover, .btn-group.success input:hover[type=button], .btn-group.success input:hover[type=submit], .btn-group.success a.btn:hover {
@@ -73,7 +73,7 @@ button.warn:hover, input.warn:hover[type=button], input.warn:hover[type=submit],
 
 button.error, input.error[type=button], input.error[type=submit], a.error.btn, .btn-group.error button, .btn-group.error input[type=button], .btn-group.error input[type=submit], .btn-group.error a.btn {
   background-color: #E90000;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 button.error:hover, input.error:hover[type=button], input.error:hover[type=submit], a.error.btn:hover, .btn-group.error button:hover, .btn-group.error input:hover[type=button], .btn-group.error input:hover[type=submit], .btn-group.error a.btn:hover {
@@ -91,7 +91,7 @@ button.light:hover, input.light:hover[type=button], input.light:hover[type=submi
 
 button.dark, input.dark[type=button], input.dark[type=submit], a.dark.btn, .btn-group.dark button, .btn-group.dark input[type=button], .btn-group.dark input[type=submit], .btn-group.dark a.btn {
   background-color: #212121;
-  color: ghostwhite;
+  color: #f5f5f5;
 }
 
 button.dark:hover, input.dark:hover[type=button], input.dark:hover[type=submit], a.dark.btn:hover, .btn-group.dark button:hover, .btn-group.dark input:hover[type=button], .btn-group.dark input:hover[type=submit], .btn-group.dark a.btn:hover {
