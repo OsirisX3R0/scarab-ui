@@ -10,67 +10,33 @@ body
         .message
             background-color: lighten($bg-dark, 5%)
             @include set-text-color(lighten($bg-dark, 5%))
+body
+    .message
+        border-width: 0 0 0 3px
+        border-style: solid;
+        border-radius: 3px
+        margin-bottom: 0.75rem
+        padding: 1rem
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5)
 
-.message
-    border-width: 0 0 0 3px
-    border-style: solid;
-    border-radius: 3px
-    margin-bottom: 0.75rem
-    padding: 1rem
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5)
-
-    &.primary        
-        border-color: $primary
-    &.secondary        
-        border-color: $secondary
-    &.info        
-        border-color: $info
-    &.success        
-        border-color: $success
-    &.warn        
-        border-color: $warn
-    &.error        
-        border-color: $error
-    &.light        
-        border-color: darken($bg-light, 10%)
-    &.dark        
-        border-color: $bg-dark
-
-    // &.light
-    //     border-width: 1px
-    //     border-style: solid
-    //     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-    //     &.info        
-    //         background-color: lighten($info, 25%)
-    //         border-color: $info
-    //         @include set-text-color(lighten($info, 30%))
-    //     &.success        
-    //         background-color: lighten($success, 25%)
-    //         border-color: $success
-    //         @include set-text-color(lighten($success, 30%))
-    //     &.warn        
-    //         background-color: lighten($warn, 25%)
-    //         border-color: $warn
-    //         @include set-text-color(lighten($warn, 30%))
-    //     &.error        
-    //         background-color: lighten($error, 25%)
-    //         border-color: $error
-    //         @include set-text-color(lighten($error, 30%))
-
-    // &.outline
-    //     background: none
-    //     border-width: 1px
-    //     border-style: solid
-    //     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-    //     &.info
-    //         border-color: $info
-    //         color: $info
-    //     &.success
-    //         border-color: $success
-    //         color: $success
-    //     &.warn
-    //         border-color: $warn
-    //         color: $warn
-    //     &.error
-    //         border-color: $error
-    //         color: $error
+        &.primary        
+            border-color: $primary
+        &.secondary        
+            border-color: $secondary
+        &.info        
+            border-color: $info
+            color: darken($info, 20%)
+        &.success        
+            border-color: $success
+            color: darken($success, 20%)
+        &.warn        
+            border-color: $warn
+            color: darken($warn, 20%)
+        &.error        
+            border-color: $error
+            color: darken($error, 20%)
+        &.light        
+            border-color: darken($bg-light, 10%)
+            color: darken($bg-light, 20%)
+        &.dark        
+            border-color: $bg-dark

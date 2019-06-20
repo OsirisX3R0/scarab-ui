@@ -11,86 +11,110 @@ body
             background-color: lighten($bg-dark, 5%)
             @include set-text-color(lighten($bg-dark, 5%))
 
-.card
-    border-radius: 3px
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
-    margin: 1.2rem
-    padding: 0.9rem 1rem
+body
+    .card
+        border-radius: 3px
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
+        margin: 1.2rem
 
-    &.primary
-        border-bottom: 3px solid $primary
+        &.primary
+            background-color: $primary
+            @include set-text-color($primary)
+        &.primary-border
+            border-bottom: 3px solid $primary
 
-    &.secondary
-        border-bottom: 3px solid $secondary
+        &.secondary
+            background-color: $secondary
+            @include set-text-color($secondary)
+        &.secondary-border
+            border-bottom: 3px solid $secondary
 
-    &.info
-        border-bottom: 3px solid $info
+        &.info
+            background-color: $info
+            @include set-text-color($info)
+        &.info-border
+            border-bottom: 3px solid $info
 
-    &.success
-        border-bottom: 3px solid $success
+        &.success
+            background-color: $success
+            @include set-text-color($success)
+        &.success-border
+            border-bottom: 3px solid $success
 
-    &.warn
-        border-bottom: 3px solid $warn
+        &.warn
+            background-color: $warn
+            @include set-text-color($warn)
+        &.warn-border
+            border-bottom: 3px solid $warn
 
-    &.error
-        border-bottom: 3px solid $error
+        &.error
+            background-color: $error
+            @include set-text-color($error)
+        &.error-border
+            border-bottom: 3px solid $error
 
-    &.light
-        border-bottom: 3px solid darken($bg-light, 10%)
-        @include set-text-color($bg-light)
+        &.light
+            border-bottom: 3px solid darken($bg-light, 10%)
+            @include set-text-color(darken($bg-light, 10%))
+        &.light-border
+            border-bottom: 3px solid $bg-light
 
-    &.dark
-        background-color: lighten($bg-dark, 10%)
-        @include set-text-color(lighten($bg-dark, 10%))
-    
-    .card-head
-        width: auto
-        border-bottom: 1px solid $table-border
+        &.dark
+            background-color: lighten($bg-dark, 10%)
+            @include set-text-color(lighten($bg-dark, 10%))
+        &.dark-border
+            border-bottom: 3px solid $bg-dark
+        
+        .card-head
+            width: auto
+            border-bottom: 1px solid $table-border
+            padding: 0.9rem 1rem
 
-        h3
-            font-size: 1.25rem
+            h3
+                font-size: 1.25rem
+                margin-bottom: 0
 
-    .card-body
-        padding: 0.5rem
+        .card-body
+            padding: 0.9rem 1rem
 
-    .card-foot
-        border-top: 1px solid $table-border
-        padding: 0.75rem 0 0 0
-        display: grid
+        .card-foot
+            border-top: 1px solid $table-border
+            padding: 0.9rem 1rem
+            display: grid
 
-        &.two
-            @extend .card-foot
-            grid-template-columns: 1fr 1fr
+            &.two
+                @extend .card-foot
+                grid-template-columns: 1fr 1fr
 
-        &.three
-            @extend .card-foot
-            grid-template-columns: 1fr 1fr 1fr
+            &.three
+                @extend .card-foot
+                grid-template-columns: 1fr 1fr 1fr
 
-        .foot-left
-            text-align: left
+            .foot-left
+                text-align: left
 
-        &.left
-            text-align: left
+            &.left
+                text-align: left
 
-        &-left
-            @extend .foot-left
+            &-left
+                @extend .foot-left
 
-        .foot-right
-            text-align: right
+            .foot-right
+                text-align: right
 
-        &.right
-            text-align: right
+            &.right
+                text-align: right
 
-        &-right
-            @extend .foot-right
+            &-right
+                @extend .foot-right
 
-        .foot-center
-            text-align: center
+            .foot-center
+                text-align: center
 
-        &.center
-            text-align: center
+            &.center
+                text-align: center
 
-        &-center
-            @extend .foot-center
+            &-center
+                @extend .foot-center
 
     
