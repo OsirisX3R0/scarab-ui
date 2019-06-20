@@ -1180,19 +1180,125 @@ input[type=text], input[type=number], input[type=date], input[type=datetime], in
   padding: 0.5rem;
 }
 
+input[type=text]:focus, input:focus[type=number], input:focus[type=date], input:focus[type=datetime], input:focus[type=color], input:focus[type=password], input:focus[type=radio], input:focus[type=checkbox], select:focus {
+  border-color: #0808c9;
+}
+
+input[type=text].secondary:focus, input.secondary:focus[type=number], input.secondary:focus[type=date], input.secondary:focus[type=datetime], input.secondary:focus[type=color], input.secondary:focus[type=password], input.secondary:focus[type=radio], input.secondary:focus[type=checkbox], select.secondary:focus {
+  border-color: #9e9e9e;
+}
+
+input[type=text].info:focus, input.info:focus[type=number], input.info:focus[type=date], input.info:focus[type=datetime], input.info:focus[type=color], input.info:focus[type=password], input.info:focus[type=radio], input.info:focus[type=checkbox], select.info:focus {
+  border-color: #51a1ec;
+}
+
+input[type=text].success:focus, input.success:focus[type=number], input.success:focus[type=date], input.success:focus[type=datetime], input.success:focus[type=color], input.success:focus[type=password], input.success:focus[type=radio], input.success:focus[type=checkbox], select.success:focus {
+  border-color: #05C16C;
+}
+
+input[type=text].warn:focus, input.warn:focus[type=number], input.warn:focus[type=date], input.warn:focus[type=datetime], input.warn:focus[type=color], input.warn:focus[type=password], input.warn:focus[type=radio], input.warn:focus[type=checkbox], select.warn:focus {
+  border-color: #E1BB22;
+}
+
+input[type=text].error:focus, input.error:focus[type=number], input.error:focus[type=date], input.error:focus[type=datetime], input.error:focus[type=color], input.error:focus[type=password], input.error:focus[type=radio], input.error:focus[type=checkbox], select.error:focus {
+  border-color: #E90000;
+}
+
+input[type=text].light:focus, input.light:focus[type=number], input.light:focus[type=date], input.light:focus[type=datetime], input.light:focus[type=color], input.light:focus[type=password], input.light:focus[type=radio], input.light:focus[type=checkbox], select.light:focus {
+  border-color: #f5f5f5;
+}
+
+input[type=text].dark:focus, input.dark:focus[type=number], input.dark:focus[type=date], input.dark:focus[type=datetime], input.dark:focus[type=color], input.dark:focus[type=password], input.dark:focus[type=radio], input.dark:focus[type=checkbox], select.dark:focus {
+  border-color: #212121;
+}
+
+.mark::after {
+  display: none;
+  position: absolute;
+  content: "";
+}
+
+label.check, label.radio {
+  position: relative;
+}
+
+label.check.block, label.block.radio {
+  display: block;
+}
+
+label.check.secondary input:checked ~ .mark, label.secondary.radio input:checked ~ .mark {
+  background-color: #9e9e9e;
+}
+
+label.check.secondary input:checked ~ .mark:active, label.secondary.radio input:checked ~ .mark:active {
+  border-color: #9e9e9e;
+}
+
+label.check.info input:checked ~ .mark, label.info.radio input:checked ~ .mark {
+  background-color: #51a1ec;
+}
+
+label.check.info input:checked ~ .mark:active, label.info.radio input:checked ~ .mark:active {
+  border-color: #51a1ec;
+}
+
+label.check.success input:checked ~ .mark, label.success.radio input:checked ~ .mark {
+  background-color: #05C16C;
+}
+
+label.check.success input:checked ~ .mark:active, label.success.radio input:checked ~ .mark:active {
+  border-color: #05C16C;
+}
+
+label.check.warn input:checked ~ .mark, label.warn.radio input:checked ~ .mark {
+  background-color: #E1BB22;
+}
+
+label.check.warn input:checked ~ .mark:active, label.warn.radio input:checked ~ .mark:active {
+  border-color: #E1BB22;
+}
+
+label.check.error input:checked ~ .mark, label.error.radio input:checked ~ .mark {
+  background-color: #E90000;
+}
+
+label.check.error input:checked ~ .mark:active, label.error.radio input:checked ~ .mark:active {
+  border-color: #E90000;
+}
+
+label.check.light input:checked ~ .mark, label.light.radio input:checked ~ .mark {
+  background-color: #f5f5f5;
+}
+
+label.check.light input:checked ~ .mark:active, label.light.radio input:checked ~ .mark:active {
+  border-color: #f5f5f5;
+}
+
+label.check.dark input:checked ~ .mark, label.dark.radio input:checked ~ .mark {
+  background-color: #212121;
+}
+
+label.check.dark input:checked ~ .mark:active, label.dark.radio input:checked ~ .mark:active {
+  border-color: #212121;
+}
+
 label.check input, label.radio input {
   display: none;
   visibility: hidden;
   opacity: 0;
 }
 
-label.check input:checked ~ span, label.radio input:checked ~ span {
+label.check input:checked ~ .mark, label.radio input:checked ~ .mark {
   background-color: #0808c9;
 }
 
-label.check span, label.radio span {
-  width: 14px;
-  height: 14px;
+label.check input:checked ~ .mark::after, label.radio input:checked ~ .mark::after {
+  display: block;
+}
+
+label.check .mark, label.radio .mark {
+  width: 15px;
+  height: 15px;
   background-color: transparent;
   border: 1px solid #c7c7c7;
   border-radius: 4px;
@@ -1200,24 +1306,42 @@ label.check span, label.radio span {
   position: relative;
   top: 1px;
   cursor: pointer;
+  -webkit-transition: background-color .1s;
+  transition: background-color .1s;
 }
 
-label.check span::after, label.radio span::after {
-  position: absolute;
-  content: "";
-  left: 12px;
-  top: 12px;
-  width: 0px;
-  height: 0px;
-  border-radius: 5px;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(0deg) scale(0);
-          transform: rotate(0deg) scale(0);
-  opacity: 1;
+label.check .mark:hover, label.radio .mark:hover {
+  background-color: #eee;
 }
 
-label.radio span {
+label.check .mark:active, label.radio .mark:active {
+  border-color: #0808c9;
+}
+
+label.check .mark::after, label.radio .mark::after {
+  border-radius: 1px;
+  left: 4px;
+  top: 2px;
+  width: 3px;
+  height: 6px;
+  border: solid #f5f5f5;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(43deg);
+          transform: rotate(43deg);
+}
+
+label.radio .mark {
   border-radius: 1rem;
+}
+
+label.radio .mark::after {
+  background-color: #f5f5f5;
+  border-width: 0;
+  border-radius: 1rem;
+  left: 3px;
+  top: 3px;
+  width: 7px;
+  height: 7px;
 }
 
 .form-group {
@@ -1228,11 +1352,11 @@ label.radio span {
   display: block;
 }
 
-.form-group-col {
+.form-col {
   margin: 0 0.25rem 0.5rem 0.25rem;
 }
 
-.form-group-col label {
+.form-col label {
   display: inline;
   margin-right: 5px;
 }

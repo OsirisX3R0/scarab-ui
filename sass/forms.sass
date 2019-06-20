@@ -8,6 +8,30 @@ input
         border-radius: 3px
         padding: 0.5rem
 
+        &:focus
+            border-color: $primary
+        &.secondary
+            &:focus
+                border-color: $secondary
+        &.info
+            &:focus
+                border-color: $info
+        &.success
+            &:focus
+                border-color: $success
+        &.warn
+            &:focus
+                border-color: $warn
+        &.error
+            &:focus
+                border-color: $error
+        &.light
+            &:focus
+                border-color: $bg-light
+        &.dark
+            &:focus
+                border-color: $bg-dark
+
     &[type=number]
         @extend [type=text]
     &[type=date]
@@ -26,8 +50,76 @@ input
 select
     @extend input[type=text]
 
+.mark
+    &::after
+        display: none
+        position: absolute
+        content: ""
+
 label
     &.check
+
+        &.block
+            display: block
+
+        &.secondary
+            input
+                &:checked
+                    ~
+                        .mark
+                            background-color: $secondary
+                            &:active
+                                border-color: $secondary
+        &.info
+            input
+                &:checked
+                    ~
+                        .mark
+                            background-color: $info
+                            &:active
+                                border-color: $info
+        &.success
+            input
+                &:checked
+                    ~
+                        .mark
+                            background-color: $success
+                            &:active
+                                border-color: $success
+        &.warn
+            input
+                &:checked
+                    ~
+                        .mark
+                            background-color: $warn
+                            &:active
+                                border-color: $warn
+        &.error
+            input
+                &:checked
+                    ~
+                        .mark
+                            background-color: $error
+                            &:active
+                                border-color: $error
+        &.light
+            input
+                &:checked
+                    ~
+                        .mark
+                            background-color: $bg-light
+                            &:active
+                                border-color: $bg-light
+        &.dark
+            input
+                &:checked
+                    ~
+                        .mark
+                            background-color: $bg-dark
+                            &:active
+                                border-color: $bg-dark
+
+        position: relative
         input
             display: none
             visibility: hidden
@@ -35,12 +127,15 @@ label
 
             &:checked
                 ~
-                    span
+                    .mark
                         background-color: $primary
 
-        span
-            width: 14px
-            height: 14px
+                        &::after
+                            display: block
+
+        .mark
+            width: 15px
+            height: 15px
             background-color: transparent
             border: 1px solid $table-border
             border-radius: 4px
@@ -48,30 +143,42 @@ label
             position: relative
             top: 1px
             cursor: pointer
+            transition: background-color .1s
 
-        span::after
-            position: absolute
-            content: ""
-            left: 12px
-            top: 12px
-            width: 0px
-            height: 0px
-            border-radius: 5px
-            border-width: 0 3px 3px 0
-            transform: rotate(0deg) scale(0)
-            opacity: 1
+            &:hover
+                background-color: #eee
+            &:active
+                border-color: $primary
+
+            &::after
+                border-radius: 1px
+                left: 4px
+                top: 2px
+                width: 3px
+                height: 6px
+                border: solid $bg-light
+                border-width: 0 2px 2px 0
+                transform: rotate(43deg)
 
     &.radio
         @extend .check
-        span
+        .mark
             border-radius: 1rem
+            &::after
+                background-color:#f5f5f5
+                border-width: 0
+                border-radius: 1rem
+                left: 3px
+                top: 3px
+                width: 7px
+                height: 7px
 
 .form-group
     margin: 0 0.25rem 0.5rem 0.25rem
     label
         display: block
 
-.form-group-col
+.form-col
     margin: 0 0.25rem 0.5rem 0.25rem
     label
         display: inline
