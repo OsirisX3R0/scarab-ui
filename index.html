@@ -8,12 +8,6 @@
     <link rel="stylesheet" href="/css/scarab.css">
 </head>
 <body class="">
-    <style>
-        .item {
-            background-color: aquamarine;
-            border-radius: 3px;
-        }
-    </style>
     <div class="container">
         <h2>Typography</h2>
         <h1>Heading 1</h1>
@@ -658,14 +652,16 @@
             <input class="success" type="text" placeholder="Input" />
         </div>
 
-        <select class="dark">
-            <option value="">Option 1</option>
-            <option value="">Option 2</option>
-            <option value="">Option 3</option>
-            <option value="">Option 4</option>
-        </select>
+        <div class="form-group">
+            <select class="dark">
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+                <option value="">Option 3</option>
+                <option value="">Option 4</option>
+            </select>
+        </div>
 
-        <div class="form-group-radio">            
+        <div class="radio-group">            
             <label class="radio">
                 <input type="radio" name="options">
                 <span class="mark"></span>
@@ -678,7 +674,7 @@
             </label>
         </div>
 
-        <div class="form-group-check">
+        <div class="check-group block">
             <label class="check info">
                 <input type="checkbox">
                 <span class="mark"></span>
@@ -697,9 +693,9 @@
         </div>
 
         <input type="range" min="0" max="100">
-        <input type="range" min="0" max="100">
-        <input type="range" min="0" max="100">
-        <input type="range" min="0" max="100">
+        <input class="primary" type="range" min="0" max="100">
+        <input class="success" type="range" min="0" max="100">
+        <input class="dark" type="range" min="0" max="100">
 
         <hr />
 
