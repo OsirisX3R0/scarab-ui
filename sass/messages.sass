@@ -6,10 +6,30 @@ body
         .message
             background-color: #fff
             @include set-text-color(#fff)
+            &.info
+                color: darken($info, 20%)
+            &.success
+                color: darken($success, 20%)
+            &.warn
+                color: darken($warn, 20%)
+            &.error
+                color: darken($error, 20%)
+            &.light
+                color: darken($bg-light, 20%)
     &.dark
         .message
             background-color: lighten($bg-dark, 5%)
             @include set-text-color(lighten($bg-dark, 5%))
+            &.info
+                color: lighten($info, 30%)
+            &.success
+                color: lighten($success, 30%)
+            &.warn
+                color: lighten($warn, 30%)
+            &.error
+                color: lighten($error, 30%)
+            &.light
+                color: lighten($bg-light, 30%)
 body
     .message
         border-width: 0 0 0 3px
@@ -25,18 +45,13 @@ body
             border-color: $secondary
         &.info        
             border-color: $info
-            color: darken($info, 20%)
         &.success        
             border-color: $success
-            color: darken($success, 20%)
         &.warn        
             border-color: $warn
-            color: darken($warn, 20%)
         &.error        
             border-color: $error
-            color: darken($error, 20%)
-        &.light        
+        &.light
             border-color: darken($bg-light, 10%)
-            color: darken($bg-light, 20%)
         &.dark        
             border-color: $bg-dark
