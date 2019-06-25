@@ -44,3 +44,22 @@
       &:hover
         background-color: $color
         @include set-text-color($color)
+
+@mixin range-state($color)
+    &:focus
+        &::-ms-fill-lower
+            background: $color
+    &::-webkit-slider-runnable-track
+            background: $color
+    &::-webkit-slider-thumb
+            background: $color
+    &::-moz-range-track
+            background: $color
+    &::-moz-range-thumb
+            background: $color
+    &::-ms-fill-lower
+            background: darken($color, 2%)
+    &::-ms-fill-upper
+            background: $color
+    &::-ms-thumb
+            background: $color

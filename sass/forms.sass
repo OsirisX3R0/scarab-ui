@@ -109,90 +109,6 @@ input
             &:focus
                 border-color: $bg-dark
 
-    &[type=range]
-        appearance: none
-        background: none
-        margin: 18px 0
-        // width: 100%
-        &:focus
-            outline: none
-        &::-webkit-slider-runnable-track
-            width: 100%
-            height: 2px
-            animate: 0.2s
-            box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d
-            background: $bg-button
-            /* border-radius: 1.3px; */
-            border: 0.2px solid #010101
-        &::-webkit-slider-thumb 
-            /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
-            height: 12px
-            width: 12px
-            border-radius: 50%
-            background: $bg-button
-            -webkit-appearance: none
-            margin-top: -5px
-        &:hover
-            background: darken($bg-button, 10%)
-            &::-webkit-slider-thumb
-                background: darken($bg-button, 10%)
-            &::-webkit-slider-runnable-track
-                @extend input[type=range]:hover::-webkit-slider-thumb
-            &::-moz-range-track
-                @extend input[type=range]:hover::-webkit-slider-runnable-track
-            &::-moz-range-thumb
-                @extend input[type=range]:hover::-webkit-slider-thumb
-            &::-ms-track
-                @extend input[type=range]:hover::-webkit-slider-thumb
-            &::-ms-fill-lower
-                @extend input[type=range]:hover::-webkit-slider-thumb
-            &::-ms-fill-upper
-                @extend input[type=range]:hover::-webkit-slider-thumb
-        &::-moz-range-track
-            @extend input[type=range]::-webkit-slider-runnable-track
-            animate: 0.2s
-        &::-moz-range-thumb
-            @extend input[type=range]::-webkit-slider-thumb
-        &::-ms-track
-            @extend input[type=range]::-moz-range-track
-            border-color: transparent
-            color: transparent
-        &::-ms-thumb
-            @extend input[type=range]::-webkit-slider-thumb
-            margin-top: 0px
-        &::-ms-fill-lower
-            background: $bg-button;
-            border: 0.2px solid #010101;
-            border-radius: 2.6px;
-            box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-        &::-ms-fill-upper
-            @extend input[type=range]::-ms-fill-lower
-
-        .success
-            &::-webkit-slider-runnable-track
-                background: $success
-            &::-webkit-slider-thumb
-                background: $success
-            &:hover
-                background: darken($success, 10%)
-                &::-webkit-slider-thumb
-                    background: darken($success, 10%)
-                &::-webkit-slider-runnable-track
-                    @extend .success:hover::-webkit-slider-thumb
-                &::-moz-range-track
-                    @extend .success:hover::-webkit-slider-runnable-track
-                &::-moz-range-thumb
-                    @extend .success:hover::-webkit-slider-thumb
-                &::-ms-track
-                    @extend .success:hover::-webkit-slider-thumb
-                &::-ms-fill-lower
-                    @extend .success:hover::-webkit-slider-thumb
-                &::-ms-fill-upper
-                    @extend .success:hover::-webkit-slider-thumb
-
-
-
-
     &[type=number]
         @extend [type=text]
     &[type=date]
@@ -207,6 +123,106 @@ input
         @extend [type=text]
     &[type=checkbox]
         @extend [type=text]
+
+    &[type=range]
+        -webkit-appearance: none
+        // width: 100%
+        margin: 8.65px 0
+    
+        &:focus
+            outline: none
+            &::-webkit-slider-runnable-track
+                // background: lighten($table-border, 25%)
+            &::-ms-fill-lower
+                background: $table-border
+            &::-ms-fill-upper
+                // background: lighten($table-border, 25%);
+    
+        &::-webkit-slider-runnable-track 
+            width: 100%
+            height: 1.7px
+            cursor: pointer
+            box-shadow: 0px 0px 0px #000, 0px 0px 0px #000
+            background: $table-border
+            border-radius: 1.3px
+            border-width: 0px
+    
+        &::-webkit-slider-thumb
+            box-shadow: 0px 0px 0px #000, 0px 0px 0px #000
+            border-width: 0px
+            height: 19px
+            width: 16px
+            border-radius: 23px
+            background: $table-border
+            cursor: pointer
+            -webkit-appearance: none
+            margin-top: -8.65px
+
+        &::-moz-range-track
+            width: 100%
+            height: 1.7px
+            cursor: pointer
+            box-shadow: 0px 0px 0px #000, 0px 0px 0px #000
+            background: $table-border
+            border-radius: 1.3px
+            border-width: 0px
+    
+        &::-moz-range-thumb
+            box-shadow: 0px 0px 0px #000, 0px 0px 0px #000
+            border-width: 0px
+            height: 19px
+            width: 16px
+            border-radius: 23px
+            background: $table-border
+            cursor: pointer
+
+        &::-ms-track
+            width: 100%
+            height: 1.7px
+            cursor: pointer
+            background: transparent
+            border-color: transparent
+            color: transparent
+    
+        &::-ms-fill-lower
+            background: darken($table-border, 2%)
+            border: 0px solid rgba(1, 1, 1, 0)
+            border-radius: 2.6px
+            box-shadow: 0px 0px 0px #000, 0px 0px 0px #000
+    
+        &::-ms-fill-upper
+            background: $table-border
+            border: 0px solid rgba(1, 1, 1, 0)
+            border-radius: 2.6px
+            box-shadow: 0px 0px 0px #000, 0px 0px 0px #000
+    
+        &::-ms-thumb
+            box-shadow: 0px 0px 0px #000, 0px 0px 0px #000
+            border-width: 0px
+            height: 19px
+            width: 16px
+            border-radius: 23px
+            background: $table-border
+            cursor: pointer
+            height: 1.7px
+        
+        &.primary
+            @include range-state($primary)
+        &.secondary
+            @include range-state($secondary)
+        &.info
+            @include range-state($info)
+        &.success
+            @include range-state($success)
+        &.warn
+            @include range-state($warn)
+        &.error
+            @include range-state($error)
+        &.light
+            @include range-state($bg-light)
+        &.dark
+            @include range-state($bg-dark)
+
 
 select
     @extend input[type=text]
