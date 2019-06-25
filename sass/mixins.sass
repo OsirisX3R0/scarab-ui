@@ -12,6 +12,12 @@
   @else
     background-color: $bg-light
 
+@function set-color($color)
+  @if (lightness($color) > 50)
+    @return $bg-dark
+  @else
+    @return $bg-light
+
 @mixin default-font
   font-family: 'Montserrat-Regular', Calibri, 'Trebuchet MS', sans-serif
   font-size: 14px

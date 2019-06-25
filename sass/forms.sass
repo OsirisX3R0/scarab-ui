@@ -1,6 +1,80 @@
 @import variables
 @import mixins
 
+body
+    &:not(.dark)
+        input
+            &[type=text]
+                color: $bg-dark
+            &[type=number]
+                color: $bg-dark
+            &[type=date]
+                color: $bg-dark
+            &[type=datetime]
+                color: $bg-dark
+            &[type=color]
+                color: $bg-dark
+            &[type=password]
+                color: $bg-dark
+            &[type=radio]
+                color: $bg-dark
+            &[type=checkbox]
+                color: $bg-dark
+
+        select
+            color: $bg-dark
+
+        label
+            &.check
+                .mark
+                    &::after
+                        border: solid $bg-light
+                        border-width: 0 2px 2px 0;
+
+            &.radio
+                .mark
+                    &::after
+                        background-color: $bg-light
+                        border: 0
+
+
+    &.dark
+        input
+            &[type=text]
+                color: $bg-light
+            &[type=number]
+                color: $bg-light
+            &[type=date]
+                color: $bg-light
+            &[type=datetime]
+                color: $bg-light
+            &[type=color]
+                color: $bg-light
+            &[type=password]
+                color: $bg-light
+            &[type=radio]
+                color: $bg-light
+            &[type=checkbox]
+                color: $bg-light
+
+        select
+            color: $bg-light
+            option
+                color: $bg-dark
+
+        label
+            &.check
+                .mark
+                    &::after
+                        border: solid $bg-dark
+                        border-width: 0 2px 2px 0;
+
+            &.radio
+                .mark
+                    &::after
+                        background-color: $bg-dark
+                        border: 0
+
 input
     &[type=text]
         @include default-font
@@ -243,7 +317,7 @@ label
                 top: 2px
                 width: 3px
                 height: 6px
-                border: solid $bg-light
+                // border: solid $bg-light
                 border-width: 0 2px 2px 0
                 transform: rotate(43deg)
 
@@ -252,7 +326,7 @@ label
         .mark
             border-radius: 1rem
             &::after
-                background-color:#f5f5f5
+                // background-color:#f5f5f5
                 border-width: 0
                 border-radius: 1rem
                 left: 3px
