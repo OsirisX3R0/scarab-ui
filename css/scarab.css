@@ -163,23 +163,31 @@ code {
   padding: 0.3rem;
 }
 
-.upper {
+.font-upper {
   text-transform: uppercase;
 }
 
-.lower {
+.font-lower {
   text-transform: lowercase;
 }
 
-.italic {
+.font-bold {
+  font-weight: bold;
+}
+
+.font-bolder {
+  font-weight: bolder;
+}
+
+.font-italic {
   font-style: italic;
 }
 
-.underline {
+.font-underline {
   text-decoration: underline;
 }
 
-.strike {
+.font-strike {
   text-decoration: line-through;
 }
 
