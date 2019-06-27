@@ -5,7 +5,7 @@ body
     &:not(.dark)
         .message
             background-color: #fff
-            @include set-text-color(#fff)
+            color: set-color(#fff)
             &.info
                 color: darken($info, 20%)
             &.success
@@ -19,7 +19,7 @@ body
     &.dark
         .message
             background-color: lighten($bg-dark, 5%)
-            @include set-text-color(lighten($bg-dark, 5%))
+            color: set-color(lighten($bg-dark, 5%))
             &.info
                 color: lighten($info, 30%)
             &.success

@@ -19,7 +19,7 @@ body
                     tr
                         &:nth-child(odd)
                             background-color: darken($bg-light, 5%)
-                            @include set-text-color($bg-light)
+                            color: set-color($bg-light)
     &.dark
         table
             thead
@@ -37,7 +37,7 @@ body
                     tr
                         &:nth-child(odd)
                             background-color: lighten($bg-dark, 5%)
-                            @include set-text-color($bg-dark)
+                            color: set-color($bg-dark)
 
 table
     width: 100%
@@ -76,46 +76,46 @@ table
         thead
             th
                 background-color: $primary
-                @include set-text-color($primary)
+                color: set-color($primary)
 
     &.secondary
         thead
             th
                 background-color: $secondary
-                @include set-text-color($secondary)
+                color: set-color($secondary)
 
     &.info
         thead
             th
                 background-color: $info
-                @include set-text-color($info)
+                color: set-color($info)
 
     &.success
         thead
             th
                 background-color: $success
-                @include set-text-color($success)
+                color: set-color($success)
 
     &.warn
         thead
             th
                 background-color: $warn
-                @include set-text-color($warn)
+                color: set-color($warn)
 
     &.error
         thead
             th
                 background-color: $error
-                @include set-text-color($error)
+                color: set-color($error)
 
     &.light
         thead
             th
                 background-color: $bg-light
-                @include set-text-color($bg-light)
+                color: set-color($bg-light)
 
     &.dark
         thead
             th
                 background-color: $bg-dark
-                @include set-text-color($bg-dark)
+                color: set-color($bg-dark)

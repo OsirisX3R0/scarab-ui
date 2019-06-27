@@ -5,11 +5,11 @@ body
     &:not(.dark)
         .card
             background-color: #fff
-            @include set-text-color(#fff)
+            color: set-color(#fff)
     &.dark
         .card
             background-color: lighten($bg-dark, 5%)
-            @include set-text-color(lighten($bg-dark, 5%))
+            color: set-color(lighten($bg-dark, 5%))
 
 body
     .card
@@ -19,49 +19,49 @@ body
 
         &.primary
             background-color: $primary
-            @include set-text-color($primary)
+            color: set-color($primary)
         &.primary-border
             border-bottom: 3px solid $primary
 
         &.secondary
             background-color: $secondary
-            @include set-text-color($secondary)
+            color: set-color($secondary)
         &.secondary-border
             border-bottom: 3px solid $secondary
 
         &.info
             background-color: $info
-            @include set-text-color($info)
+            color: set-color($info)
         &.info-border
             border-bottom: 3px solid $info
 
         &.success
             background-color: $success
-            @include set-text-color($success)
+            color: set-color($success)
         &.success-border
             border-bottom: 3px solid $success
 
         &.warn
             background-color: $warn
-            @include set-text-color($warn)
+            color: set-color($warn)
         &.warn-border
             border-bottom: 3px solid $warn
 
         &.error
             background-color: $error
-            @include set-text-color($error)
+            color: set-color($error)
         &.error-border
             border-bottom: 3px solid $error
 
         &.light
             border-bottom: 3px solid darken($bg-light, 10%)
-            @include set-text-color(darken($bg-light, 10%))
+            color: set-color(darken($bg-light, 10%))
         &.light-border
             border-bottom: 3px solid $bg-light
 
         &.dark
             background-color: lighten($bg-dark, 10%)
-            @include set-text-color(lighten($bg-dark, 10%))
+            color: set-color(lighten($bg-dark, 10%))
         &.dark-border
             border-bottom: 3px solid $bg-dark
         

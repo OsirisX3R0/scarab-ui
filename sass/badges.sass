@@ -3,7 +3,7 @@
 
 .badge    
     background-color: $bg-button
-    @include set-text-color($bg-button)
+    color: set-color($bg-button)
     // @include default-font
     // border: 1px solid darken($bg-button, 3%)
     border-radius: 4px
@@ -19,35 +19,35 @@
 
     &.primary
         background-color: $primary
-        @include set-text-color($primary)
+        color: set-color($primary)
 
     &.secondary
         background-color: $secondary
-        @include set-text-color($secondary)
+        color: set-color($secondary)
 
     &.info
         background-color: $info
-        @include set-text-color($info)
+        color: set-color($info)
 
     &.success
         background-color: $success
-        @include set-text-color($success)
+        color: set-color($success)
 
     &.warn
         background-color: $warn
-        @include set-text-color($warn)
+        color: set-color($warn)
 
     &.error
         background-color: $error
-        @include set-text-color($error)
+        color: set-color($error)
 
     &.light
         background-color: $bg-light
-        @include set-text-color($bg-light)
+        color: set-color($bg-light)
 
     &.dark
         background-color: $bg-dark
-        @include set-text-color($bg-dark)
+        color: set-color($bg-dark)
 
     &.small
         font-size: 0.7rem

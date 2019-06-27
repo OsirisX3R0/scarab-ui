@@ -1,17 +1,5 @@
 @import variables
 
-@mixin set-text-color($color)
-  @if (lightness($color) > 50)
-    color: $bg-dark // Lighter background, return dark color
-  @else
-    color: $bg-light // Darker background, return light color
-    
-@mixin set-background-color($color)
-  @if (lightness($color) > 50)
-    background-color: $bg-dark
-  @else
-    background-color: $bg-light
-
 @function set-color($color)
   @if (lightness($color) > 50)
     @return $bg-dark
@@ -33,7 +21,7 @@
 
 @mixin btn-color($color)
   background-color: $color
-  @include set-text-color($color)
+  color: set-color($color)
   &:hover
       @include btn-darken($color)
 
@@ -43,7 +31,7 @@
       color: $color
       &:hover
         background-color: $color
-        @include set-text-color($color)
+        color: set-color($color)
 
 @mixin range-state($color)
     &:focus
