@@ -15,18 +15,24 @@ ul
     @extend ol
 
     &.list
-        ul
-            margin-left: 3rem
-            li
-                border-width: 0
-                padding: 0
         list-style-type: none
         li
-            border: 1px solid $table-border
-            padding: 1rem
-        
-        ol
-            @extend ul
+            padding: .6rem 0
+            border-bottom-width: 1px
+            border-bottom-style: dashed 
+            border-bottom-color: $table-border
+            // border-left: 3px solid black
+            margin-bottom: .5rem
+            &:last-child
+                border-bottom-width: 0px
+            // &::before
+            //     content: ""
+            //     width: 5px
+            //     height: 5px
+            //     background-color: black
+            //     border-radius: 1rem
+            //     display: inline-block
+            //     margin: 0 5px 2px 0
 
     &.pagination
         list-style-type: none

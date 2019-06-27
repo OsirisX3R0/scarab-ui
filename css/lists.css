@@ -256,37 +256,35 @@ a.btn {
   background-color: #020202;
 }
 
-ol, ul, ul.list ol {
+ol, ul {
   margin: 0 0 1rem 1rem;
 }
 
-ol ol, ul ol, ol ul, ul ul, ul.list ol ul, ul.list ol {
+ol ol, ul ol, ol ul, ul ul {
   margin-left: 1rem;
 }
 
-ol ul, ul ul, ul.list ol ul, ul.list ol {
+ol ul, ul ul {
   margin-left: 1rem;
 }
 
-ul.list, ul.list ol.list, ul.list ul.list {
+ul.list {
   list-style-type: none;
 }
 
-ul.list ul, ul.list ol {
-  margin-left: 3rem;
-}
-
-ul.list ul li, ul.list ol li {
-  border-width: 0;
-  padding: 0;
-}
-
 ul.list li {
-  border: 1px solid #c7c7c7;
-  padding: 1rem;
+  padding: .6rem 0;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  border-bottom-color: #c7c7c7;
+  margin-bottom: .5rem;
 }
 
-ul.pagination, ul.list ol.pagination, ul.list ul.pagination {
+ul.list li:last-child {
+  border-bottom-width: 0px;
+}
+
+ul.pagination {
   list-style-type: none;
   display: -ms-inline-grid;
   display: inline-grid;
@@ -294,16 +292,16 @@ ul.pagination, ul.list ol.pagination, ul.list ul.pagination {
   grid-column-gap: 0;
 }
 
-ul.pagination li:first-child a, ul.list ol.pagination li:first-child a {
+ul.pagination li:first-child a {
   border-radius: 4px 0px 0px 4px;
 }
 
-ul.pagination li:last-child a, ul.list ol.pagination li:last-child a {
+ul.pagination li:last-child a {
   border-width: 1px 1px 1px 1px;
   border-radius: 0px 4px 4px 0px;
 }
 
-ul.pagination li a, ul.list ol.pagination li a {
+ul.pagination li a {
   border-style: solid;
   border-color: #c7c7c7;
   border-width: 1px 0px 1px 1px;
@@ -315,96 +313,96 @@ ul.pagination li a, ul.list ol.pagination li a {
   transition: background-color 0.2s, color 0.2s;
 }
 
-ul.pagination li a:hover, ul.list ol.pagination li a:hover {
+ul.pagination li a:hover {
   text-decoration: none;
   background-color: #0808c9;
   color: #f5f5f5;
 }
 
-ul.pagination.pill li:first-child a, ul.list ol.pagination.pill li:first-child a {
+ul.pagination.pill li:first-child a {
   border-radius: 20px 0px 0px 20px;
 }
 
-ul.pagination.pill li:last-child a, ul.list ol.pagination.pill li:last-child a {
+ul.pagination.pill li:last-child a {
   border-radius: 0px 20px 20px 0px;
 }
 
-ul.pagination.square li a, ul.list ol.pagination.square li a {
+ul.pagination.square li a {
   border-radius: 0;
 }
 
-ul.pagination.rounded, ul.list ol.pagination.rounded {
+ul.pagination.rounded {
   grid-column-gap: 0.5rem;
 }
 
-ul.pagination.rounded li a, ul.list ol.pagination.rounded li a {
+ul.pagination.rounded li a {
   border-width: 0;
   border-radius: 1rem;
 }
 
-ul.pagination.rounded li:last-child a, ul.list ol.pagination.rounded li:last-child a {
+ul.pagination.rounded li:last-child a {
   margin: 0 0 0 0;
 }
 
-ul.pagination.secondary li a, ul.list ol.pagination.secondary li a {
+ul.pagination.secondary li a {
   color: #9e9e9e;
 }
 
-ul.pagination.secondary li a:hover, ul.list ol.pagination.secondary li a:hover {
+ul.pagination.secondary li a:hover {
   background-color: #9e9e9e;
   color: #212121;
 }
 
-ul.pagination.info li a, ul.list ol.pagination.info li a {
+ul.pagination.info li a {
   color: #51a1ec;
 }
 
-ul.pagination.info li a:hover, ul.list ol.pagination.info li a:hover {
+ul.pagination.info li a:hover {
   background-color: #51a1ec;
   color: #212121;
 }
 
-ul.pagination.success li a, ul.list ol.pagination.success li a {
+ul.pagination.success li a {
   color: #05C16C;
 }
 
-ul.pagination.success li a:hover, ul.list ol.pagination.success li a:hover {
+ul.pagination.success li a:hover {
   background-color: #05C16C;
   color: #f5f5f5;
 }
 
-ul.pagination.warn li a, ul.list ol.pagination.warn li a {
+ul.pagination.warn li a {
   color: #E1BB22;
 }
 
-ul.pagination.warn li a:hover, ul.list ol.pagination.warn li a:hover {
+ul.pagination.warn li a:hover {
   background-color: #E1BB22;
   color: #212121;
 }
 
-ul.pagination.error li a, ul.list ol.pagination.error li a {
+ul.pagination.error li a {
   color: #E90000;
 }
 
-ul.pagination.error li a:hover, ul.list ol.pagination.error li a:hover {
+ul.pagination.error li a:hover {
   background-color: #E90000;
   color: #f5f5f5;
 }
 
-ul.pagination.light li a, ul.list ol.pagination.light li a {
+ul.pagination.light li a {
   color: #f5f5f5;
 }
 
-ul.pagination.light li a:hover, ul.list ol.pagination.light li a:hover {
+ul.pagination.light li a:hover {
   background-color: #f5f5f5;
   color: #212121;
 }
 
-ul.pagination.dark li a, ul.list ol.pagination.dark li a {
+ul.pagination.dark li a {
   color: #212121;
 }
 
-ul.pagination.dark li a:hover, ul.list ol.pagination.dark li a:hover {
+ul.pagination.dark li a:hover {
   background-color: #212121;
   color: #f5f5f5;
 }
