@@ -575,86 +575,86 @@ table {
     background-color: #212121;
     color: #f5f5f5; }
 
-body:not(.dark) .card {
+body:not(.sc-dark) .sc-card {
   background-color: #fff;
   color: #212121; }
 
-body.dark .card {
+body.sc-dark .sc-card {
   background-color: #2e2e2e;
   color: #f5f5f5; }
 
-body .card {
+body .sc-card {
   border-radius: 3px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   margin: 1.2rem; }
-  body .card.primary {
+  body .sc-card--primary {
     background-color: #0808c9;
     color: #f5f5f5; }
-  body .card.primary-border {
+  body .sc-card--primary-border {
     border-bottom: 3px solid #0808c9; }
-  body .card.secondary {
+  body .sc-card--secondary {
     background-color: #9e9e9e;
     color: #212121; }
-  body .card.secondary-border {
+  body .sc-card--secondary-border {
     border-bottom: 3px solid #9e9e9e; }
-  body .card.info {
+  body .sc-card--info {
     background-color: #51a1ec;
     color: #212121; }
-  body .card.info-border {
+  body .sc-card--info-border {
     border-bottom: 3px solid #51a1ec; }
-  body .card.success {
+  body .sc-card--success {
     background-color: #05C16C;
     color: #f5f5f5; }
-  body .card.success-border {
+  body .sc-card--success-border {
     border-bottom: 3px solid #05C16C; }
-  body .card.warn {
+  body .sc-card--warn {
     background-color: #E1BB22;
     color: #212121; }
-  body .card.warn-border {
+  body .sc-card--warn-border {
     border-bottom: 3px solid #E1BB22; }
-  body .card.error {
+  body .sc-card--error {
     background-color: #E90000;
     color: #f5f5f5; }
-  body .card.error-border {
+  body .sc-card--error-border {
     border-bottom: 3px solid #E90000; }
-  body .card.light {
+  body .sc-card--light {
     border-bottom: 3px solid gainsboro;
     color: #212121; }
-  body .card.light-border {
+  body .sc-card--light-border {
     border-bottom: 3px solid #f5f5f5; }
-  body .card.dark {
+  body .sc-card--dark {
     background-color: #3b3b3b;
     color: #f5f5f5; }
-  body .card.dark-border {
+  body .sc-card--dark-border {
     border-bottom: 3px solid #212121; }
-  body .card .card-head {
+  body .sc-card__head {
     width: auto;
     border-bottom: 1px solid #c7c7c7;
     padding: 0.9rem 1rem; }
-    body .card .card-head h3 {
+    body .sc-card__head h3 {
       font-size: 1.25rem;
       margin-bottom: 0; }
-  body .card .card-body {
+  body .sc-card__body {
     padding: 0.9rem 1rem; }
-  body .card .card-foot, body .card .card-foot.two, body .card .card-foot.three {
+  body .sc-card__foot, body .sc-card__foot.double, body .sc-card__foot.triple {
     border-top: 1px solid #c7c7c7;
     padding: 0.9rem 1rem;
     display: grid; }
-    body .card .two.card-foot {
+    body .double.sc-card__foot {
       grid-template-columns: 1fr 1fr; }
-    body .card .three.card-foot {
+    body .triple.sc-card__foot {
       grid-template-columns: 1fr 1fr 1fr; }
-    body .card .card-foot .foot-left, body .card .card-foot .card-foot-left {
+    body .sc-card__foot .foot-left, body .sc-card__foot .sc-card__foot-left {
       text-align: left; }
-    body .card .card-foot.left {
+    body .sc-card__foot.left {
       text-align: left; }
-    body .card .card-foot .foot-right, body .card .card-foot .card-foot-right {
+    body .sc-card__foot .foot-right, body .sc-card__foot .sc-card__foot-right {
       text-align: right; }
-    body .card .card-foot.right {
+    body .sc-card__foot.right {
       text-align: right; }
-    body .card .card-foot .foot-center, body .card .card-foot .card-foot-center {
+    body .sc-card__foot .foot-center, body .sc-card__foot .sc-card__foot-center {
       text-align: center; }
-    body .card .card-foot.center {
+    body .sc-card__foot.center {
       text-align: center; }
 
 .sc-badge {
