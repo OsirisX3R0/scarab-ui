@@ -1,0 +1,26 @@
+{
+  "name": "scarab-css",
+  "version": "0.5.0",
+  "description": "CSS UI framework",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OsirisX3R0/scarab-ui.git"
+  },
+  "keywords": [
+    "CSS",
+    "UI"
+  ],
+  "author": "Richard Harris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OsirisX3R0/scarab-ui/issues"
+  },
+  "homepage": "https://github.com/OsirisX3R0/scarab-ui#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
