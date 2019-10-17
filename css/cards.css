@@ -10,45 +10,45 @@ body .sc-card {
   border-radius: 3px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   margin: 1.2rem; }
-  body .sc-card--primary {
+  body .sc-card.sc-card--primary {
     background-color: #0808c9;
     color: #f5f5f5; }
-  body .sc-card--primary-border {
+  body .sc-card.sc-card--primary-border {
     border-bottom: 3px solid #0808c9; }
-  body .sc-card--secondary {
+  body .sc-card.sc-card--secondary {
     background-color: #9e9e9e;
     color: #212121; }
-  body .sc-card--secondary-border {
+  body .sc-card.sc-card--secondary-border {
     border-bottom: 3px solid #9e9e9e; }
-  body .sc-card--info {
+  body .sc-card.sc-card--info {
     background-color: #51a1ec;
     color: #212121; }
-  body .sc-card--info-border {
+  body .sc-card.sc-card--info-border {
     border-bottom: 3px solid #51a1ec; }
-  body .sc-card--success {
+  body .sc-card.sc-card--success {
     background-color: #05C16C;
     color: #f5f5f5; }
-  body .sc-card--success-border {
+  body .sc-card.sc-card--success-border {
     border-bottom: 3px solid #05C16C; }
-  body .sc-card--warn {
+  body .sc-card.sc-card--warn {
     background-color: #E1BB22;
     color: #212121; }
-  body .sc-card--warn-border {
+  body .sc-card.sc-card--warn-border {
     border-bottom: 3px solid #E1BB22; }
-  body .sc-card--error {
+  body .sc-card.sc-card--error {
     background-color: #E90000;
     color: #f5f5f5; }
-  body .sc-card--error-border {
+  body .sc-card.sc-card--error-border {
     border-bottom: 3px solid #E90000; }
-  body .sc-card--light {
+  body .sc-card.sc-card--light {
     border-bottom: 3px solid gainsboro;
     color: #212121; }
-  body .sc-card--light-border {
+  body .sc-card.sc-card--light-border {
     border-bottom: 3px solid #f5f5f5; }
-  body .sc-card--dark {
+  body .sc-card.sc-card--dark {
     background-color: #3b3b3b;
     color: #f5f5f5; }
-  body .sc-card--dark-border {
+  body .sc-card.sc-card--dark-border {
     border-bottom: 3px solid #212121; }
   body .sc-card__head {
     width: auto;
