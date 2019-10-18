@@ -95,7 +95,7 @@ mark {
     color: #f5f5f5; }
   mark.warn {
     background-color: #E1BB22;
-    color: #f5f5f5; }
+    color: #212121; }
   mark.error {
     background-color: #E90000;
     color: #f5f5f5; }
@@ -110,25 +110,25 @@ code {
   font-weight: 500;
   padding: 0.3rem; }
 
-.font-upper {
-  text-transform: uppercase; }
-
-.font-lower {
-  text-transform: lowercase; }
-
-.font-bold {
+.sc-font--bold {
   font-weight: bold; }
 
-.font-bolder {
+.sc-font--bolder {
   font-weight: bolder; }
 
-.font-italic {
+.sc-font--italic {
   font-style: italic; }
 
-.font-underline {
+.sc-text--upper {
+  text-transform: uppercase; }
+
+.sc-text--lower {
+  text-transform: lowercase; }
+
+.sc-text--underline {
   text-decoration: underline; }
 
-.font-strike {
+.sc-text--strike {
   text-decoration: line-through; }
 
 button, input[type=button], input[type=submit], .sc-btn {
