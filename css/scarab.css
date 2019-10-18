@@ -729,38 +729,38 @@ body .sc-card {
     width: 0.75rem;
     height: 0.75rem; }
 
-body:not(.dark) input[type=text], body:not(.dark) input[type=number], body:not(.dark) input[type=date], body:not(.dark) input[type=datetime], body:not(.dark) input[type=color], body:not(.dark) input[type=password], body:not(.dark) input[type=radio], body:not(.dark) input[type=checkbox], body:not(.dark) select {
+body:not(.sc-dark) input[type=text], body:not(.sc-dark) input[type=number], body:not(.sc-dark) input[type=date], body:not(.sc-dark) input[type=datetime], body:not(.sc-dark) input[type=color], body:not(.sc-dark) input[type=password], body:not(.sc-dark) input[type=radio], body:not(.sc-dark) input[type=checkbox], body:not(.sc-dark) select {
   color: #212121; }
 
-body:not(.dark) input[type=number] {
+body:not(.sc-dark) input[type=number] {
   color: #212121; }
 
-body:not(.dark) input[type=date] {
+body:not(.sc-dark) input[type=date] {
   color: #212121; }
 
-body:not(.dark) input[type=datetime] {
+body:not(.sc-dark) input[type=datetime] {
   color: #212121; }
 
-body:not(.dark) input[type=color] {
+body:not(.sc-dark) input[type=color] {
   color: #212121; }
 
-body:not(.dark) input[type=password] {
+body:not(.sc-dark) input[type=password] {
   color: #212121; }
 
-body:not(.dark) input[type=radio] {
+body:not(.sc-dark) input[type=radio] {
   color: #212121; }
 
-body:not(.dark) input[type=checkbox] {
+body:not(.sc-dark) input[type=checkbox] {
   color: #212121; }
 
-body:not(.dark) select {
+body:not(.sc-dark) select {
   color: #212121; }
 
-body:not(.dark) label.check .mark::after, body:not(.dark) label.radio .mark::after {
+body:not(.sc-dark) label.check .mark::after, body:not(.sc-dark) label.radio .mark::after {
   border: solid #f5f5f5;
   border-width: 0 2px 2px 0; }
 
-body:not(.dark) label.radio .mark::after {
+body:not(.sc-dark) label.radio .mark::after {
   background-color: #f5f5f5;
   border: 0; }
 
