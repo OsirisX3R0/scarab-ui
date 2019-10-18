@@ -40,26 +40,28 @@ a {
     color: $primary;
     text-decoration: none;
     transition: text-decoration .2s;
-    &.secondary {
-        color: $secondary;
-    }
-    &.info {
-        color: $info;
-    }
-    &.success {
-        color: $success;
-    }
-    &.warn {
-        color: $warn;
-    }
-    &.error {
-        color: $error;
-    }
-    &.light {
-        color: $bg-light;
-    }
-    &.dark {
-        color: $bg-dark;
+    &.sc-link {
+        &--secondary {
+            color: $secondary;
+        }
+        &--info {
+            color: $info;
+        }
+        &--success {
+            color: $success;
+        }
+        &--warn {
+            color: $warn;
+        }
+        &--error {
+            color: $error;
+        }
+        &--light {
+            color: $bg-light;
+        }
+        &--dark {
+            color: $bg-dark;
+        }
     }
     &:hover {
         text-decoration: underline;
@@ -68,29 +70,31 @@ a {
 
 mark {
     background-color: yellow;
-    &.primary {
-        background-color: $primary;
-        color: set-color($primary);
-    }
-    &.secondary {
-        background-color: $secondary;
-        color: set-color($secondary);
-    }
-    &.info {
-        background-color: $info;
-        color: set-color($info);
-    }
-    &.success {
-        background-color: $success;
-        color: set-color($success);
-    }
-    &.warn {
-        background-color: $warn;
-        color: set-color($warn);
-    }
-    &.error {
-        background-color: $error;
-        color: set-color($error);
+    &.sc-mark {
+        &--primary {
+            background-color: $primary;
+            color: set-color($primary);
+        }
+        &--secondary {
+            background-color: $secondary;
+            color: set-color($secondary);
+        }
+        &--info {
+            background-color: $info;
+            color: set-color($info);
+        }
+        &--success {
+            background-color: $success;
+            color: set-color($success);
+        }
+        &--warn {
+            background-color: $warn;
+            color: set-color($warn);
+        }
+        &--error {
+            background-color: $error;
+            color: set-color($error);
+        }
     }
 }
 

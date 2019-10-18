@@ -1,0 +1,529 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+    &:not(.sc-dark) {
+        input {
+            &[type=text] {
+                color: $bg-dark;
+            }
+            &[type=number] {
+                color: $bg-dark;
+            }
+            &[type=date] {
+                color: $bg-dark;
+            }
+            &[type=datetime] {
+                color: $bg-dark;
+            }
+            &[type=color] {
+                color: $bg-dark;
+            }
+            &[type=password] {
+                color: $bg-dark;
+            }
+            &[type=radio] {
+                color: $bg-dark;
+            }
+            &[type=checkbox] {
+                color: $bg-dark;
+            }
+        }
+
+        select {
+            color: $bg-dark;
+        }
+
+        label {
+            &.sc-check {
+                &__mark {
+                    &::after {
+                        border: solid $bg-light;
+                        border-width: 0 2px 2px 0;
+                    }
+                }
+            }
+
+            &.sc-radio {
+                &__mark {
+                    &::after {
+                        background-color: $bg-light;
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &.dark {
+        input {
+            &[type=text] {
+                color: $bg-light;
+            }
+            &[type=number] {
+                color: $bg-light;
+            }
+            &[type=date] {
+                color: $bg-light;
+            }
+            &[type=datetime] {
+                color: $bg-light;
+            }
+            &[type=color] {
+                color: $bg-light;
+            }
+            &[type=password] {
+                color: $bg-light;
+            }
+            &[type=radio] {
+                color: $bg-light;
+            }
+            &[type=checkbox] {
+                color: $bg-light;
+            }
+        }
+
+        select {
+            color: $bg-light;
+            option {
+                color: $bg-dark;
+            }
+        }
+
+        label {
+            &.sc-check {
+                &__mark {
+                    &::after {
+                        border: solid $bg-dark;
+                        border-width: 0 2px 2px 0;
+                    }
+                }
+            }
+
+            &.sc-radio {
+                &__mark {
+                    &::after {
+                        background-color: $bg-dark;
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+input {
+    &[type=text] {
+        @include default-font;
+        background: none;
+        border: solid lighten($table-border,  5%);
+        border-width: 0px 0px 1px 0px;
+        padding: 0.5rem;
+        outline-color: rgba(0, 0, 0, 0);
+
+        &:focus {
+            border-color: $primary;
+        }
+        &.sc-input {
+            &--secondary {
+                &:focus {
+                    border-color: $secondary;
+                }
+            }
+            &--info {
+                &:focus {
+                    border-color: $info;
+                }
+            }
+            &--success {
+                &:focus {
+                    border-color: $success;
+                }
+            }
+            &--warn {
+                &:focus {
+                    border-color: $warn;
+                }
+            }
+            &--error {
+                &:focus {
+                    border-color: $error;
+                }
+            }
+            &--light {
+                &:focus {
+                    border-color: $bg-light;
+                }
+            }
+            &--dark {
+                &:focus {
+                    border-color: $bg-dark;
+                }
+            }
+        }
+    }
+
+    &[type=number] {
+        @extend [type=text];
+    }
+    &[type=date] {
+        @extend [type=text];
+    }
+    &[type=datetime] {
+        @extend [type=text];
+    }
+    &[type=color] {
+        @extend [type=text];
+    }
+    &[type=password] {
+        @extend [type=text];
+    }
+    &[type=radio] {
+        @extend [type=text];
+    }
+    &[type=checkbox] {
+        @extend [type=text];
+    }
+
+    &[type=range] {
+        -webkit-appearance: none;
+        margin: 8.65px 0;
+    
+        &:focus {
+            outline: none;
+            &::-webkit-slider-runnable-track {
+                // background: lighten($table-border, 25%);
+            }
+            &::-ms-fill-lower {
+                background: $table-border;
+            }
+            &::-ms-fill-upper {
+                // background: lighten($table-border, 25%);
+            }
+        }
+        &::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 1.7px;
+            cursor: pointer;
+            box-shadow: 0px 0px 0px #000, 0px 0px 0px #000;
+            background: $table-border;
+            border-radius: 1.3px;
+            border-width: 0px;
+        }
+    
+        &::-webkit-slider-thumb {
+            box-shadow: 0px 0px 0px #000, 0px 0px 0px #000;
+            border-width: 0px;
+            height: 19px;
+            width: 16px;
+            border-radius: 23px;
+            background: $table-border;
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -8.65px;
+        }
+
+        &::-moz-range-track {
+            width: 100%;
+            height: 1.7px;
+            cursor: pointer;
+            box-shadow: 0px 0px 0px #000, 0px 0px 0px #000;
+            background: $table-border;
+            border-radius: 1.3px;
+            border-width: 0px;
+        }
+    
+        &::-moz-range-thumb {
+            box-shadow: 0px 0px 0px #000, 0px 0px 0px #000;
+            border-width: 0px;
+            height: 19px;
+            width: 16px;
+            border-radius: 23px;
+            background: $table-border;
+            cursor: pointer;
+        }
+
+        &::-ms-track {
+            width: 100%;
+            height: 1.7px;
+            cursor: pointer;
+            background: transparent;
+            border-color: transparent;
+            color: transparent;
+        }
+    
+        &::-ms-fill-lower {
+            background: darken($table-border, 2%);
+            border: 0px solid rgba(1, 1, 1, 0);
+            border-radius: 2.6px;
+            box-shadow: 0px 0px 0px #000, 0px 0px 0px #000;
+        }
+    
+        &::-ms-fill-upper {
+            background: $table-border;
+            border: 0px solid rgba(1, 1, 1, 0);
+            border-radius: 2.6px;
+            box-shadow: 0px 0px 0px #000, 0px 0px 0px #000;
+        }
+    
+        &::-ms-thumb {
+            box-shadow: 0px 0px 0px #000, 0px 0px 0px #000;
+            border-width: 0px;
+            height: 19px;
+            width: 16px;
+            border-radius: 23px;
+            background: $table-border;
+            cursor: pointer;
+            height: 1.7px;
+        }
+        &.sc-range {
+            &--primary {
+                @include range-state($primary);
+            }
+            &--secondary {
+                @include range-state($secondary);
+            }
+            &--info {
+                @include range-state($info);
+            }
+            &--success {
+                @include range-state($success);
+            }
+            &--warn {
+                @include range-state($warn);
+            }
+            &--error {
+                @include range-state($error);
+            }
+            &--light {
+                @include range-state($bg-light);
+            }
+            &--dark {
+                @include range-state($bg-dark);
+            }
+        }
+    }
+}
+
+select {
+    @extend input[type=text];
+}
+
+.sc-mark {
+    &::after {
+        display: none;
+        position: absolute;
+        content: "";
+    }
+}
+
+label {
+    &.sc-check {
+
+        &--block {
+            display: block;
+        }
+
+        &--secondary {
+            input {
+                &:checked {
+                    ~ {
+                        .mark {
+                            background-color: $secondary;
+                            &:active {
+                                border-color: $secondary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &--info {
+            input {
+                &:checked {
+                    ~ {
+                        .mark {
+                            background-color: $info;
+                            &:active {
+                                border-color: $info;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &--success {
+            input {
+                &:checked {
+                    ~ {
+                        .mark {
+                            background-color: $success;
+                            &:active {
+                                border-color: $success;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &--warn {
+            input {
+                &:checked {
+                    ~ {
+                        .mark {
+                            background-color: $warn;
+                            &:active {
+                                border-color: $warn;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &--error {
+            input {
+                &:checked {
+                    ~ {
+                        .mark {
+                            background-color: $error;
+                            &:active {
+                                border-color: $error;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &--light {
+            input {
+                &:checked {
+                    ~ {
+                        .mark {
+                            background-color: $bg-light;
+                            &:active {
+                                border-color: $bg-light;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &--dark {
+            input {
+                &:checked {
+                    ~ {
+                        .mark {
+                            background-color: $bg-dark;
+                            &:active {
+                                border-color: $bg-dark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        position: relative;
+
+        input {
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+
+            &:checked {
+                ~ {
+                    .sc-mark {
+                        background-color: $primary;
+
+                        &::after {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sc-mark {
+            width: 15px;
+            height: 15px;
+            background-color: transparent;
+            border: 1px solid $table-border;
+            border-radius: 4px;
+            display: inline-block;
+            position: relative;
+            top: 1px;
+            cursor: pointer;
+            transition: background-color .1s;
+
+            &:hover {
+                background-color: #eee;
+            }
+            &:active {
+                border-color: $primary;
+            }
+
+            &::after {
+                border-radius: 1px;
+                left: 4px;
+                top: 2px;
+                width: 3px;
+                height: 6px;
+                // border: solid $bg-light;
+                border-width: 0 2px 2px 0;
+                transform: rotate(43deg);
+            }
+        }
+    }
+
+    &.sc-radio {
+        @extend .sc-check;
+        .sc-mark {
+            border-radius: 1rem;
+            &::after {
+                // background-color:#f5f5f5;
+                border-width: 0;
+                border-radius: 1rem;
+                left: 3px;
+                top: 3px;
+                width: 7px;
+                height: 7px;
+            }
+        }
+    }
+}
+
+.sc-form__group {
+    margin: 0 0.25rem 0.5rem 0.25rem;
+    label {
+        display: block;
+    }
+}
+
+.sc-check__group {
+    label {
+        display: inline;
+    }
+    &.sc-check--block {
+        label {
+            display: block;
+        }
+    }
+}
+
+.sc-radio__group {
+    @extend .sc-check__group;
+}
+
+.sc-form__col {
+    margin: 0 0.25rem 0.5rem 0.25rem;
+    label {
+        display: inline;
+        margin-right: 5px;
+    }
+}
