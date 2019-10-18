@@ -1,0 +1,23 @@
+@import 'mixins';
+@import 'variables';
+
+\:root {
+    @include default-font;
+}
+
+body {
+    background-color: $bg-light;
+    color: $bg-dark;
+    &.sc-dark {
+        background-color: $bg-dark;
+        color: $bg-light;
+    }
+}
+
+hr {
+    height: 1px;
+    color: $table-border;
+    background-color: $table-border;
+    border: none;
+    margin: 0.75rem 0;
+}
