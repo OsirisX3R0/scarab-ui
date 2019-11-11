@@ -1120,32 +1120,32 @@ label.sc-radio .sc-mark {
     display: inline;
     margin-right: 5px; }
 
-body:not(.dark) .message {
+body:not(.dark) .sc-message {
   background-color: #fff;
   color: #212121; }
-  body:not(.dark) .message.info {
+  body:not(.dark) .sc-message--info {
     color: #156ec2; }
-  body:not(.dark) .message.success {
+  body:not(.dark) .sc-message--success {
     color: #025e34; }
-  body:not(.dark) .message.warn {
+  body:not(.dark) .sc-message--warn {
     color: #8a7213; }
-  body:not(.dark) .message.error {
+  body:not(.dark) .sc-message--error {
     color: #830000; }
-  body:not(.dark) .message.light {
+  body:not(.dark) .sc-message--light {
     color: #c2c2c2; }
 
-body.dark .message {
+body.dark .sc-message {
   background-color: #2e2e2e;
   color: #f5f5f5; }
-  body.dark .message.info {
+  body.dark .sc-message.info {
     color: #dbecfb; }
-  body.dark .message.success {
+  body.dark .sc-message.success {
     color: #64fbb7; }
-  body.dark .message.warn {
+  body.dark .sc-message.warn {
     color: #f3e4a9; }
-  body.dark .message.error {
+  body.dark .sc-message.error {
     color: #ff8383; }
-  body.dark .message.light {
+  body.dark .sc-message.light {
     color: white; }
 
 body .message {
