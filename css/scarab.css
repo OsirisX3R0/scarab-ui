@@ -131,7 +131,7 @@ code {
 .sc-text--strike {
   text-decoration: line-through; }
 
-button, input[type=button], input[type=submit], .sc-btn {
+button.sc-btn, input.sc-btn[type=button], input.sc-btn[type=submit], .sc-btn, .sc-btn__group button, .sc-btn__group input[type=button], .sc-btn__group input[type=submit], .sc-btn__group .sc-btn, .sc-btn__group a.btn {
   background-color: #e1e1e1;
   color: #212121;
   font-family: 'Montserrat-Regular', Calibri, 'Trebuchet MS', sans-serif;
@@ -142,9 +142,10 @@ button, input[type=button], input[type=submit], .sc-btn {
   border-radius: 4px;
   font-size: 1rem;
   padding: 0.4rem 0.7rem;
+  display: inline-block;
   cursor: pointer;
   transition: background-color .2s; }
-  button:hover, input:hover[type=button], input:hover[type=submit], .sc-btn:hover {
+  button.sc-btn:hover, .sc-btn:hover, .sc-btn__group button:hover, .sc-btn__group input:hover[type=button], .sc-btn__group input:hover[type=submit], .sc-btn__group a.btn:hover {
     background-color: #c2c2c2; }
   button.sc-btn--square, input.sc-btn--square[type=button], input.sc-btn--square[type=submit], .sc-btn--square.sc-btn {
     border-radius: 0px; }
@@ -200,6 +201,8 @@ button, input[type=button], input[type=submit], .sc-btn {
 .sc-btn {
   padding: 0.5rem 0.8rem;
   text-decoration: none; }
+  .sc-btn:hover {
+    text-decoration: none; }
 
 .sc-btn__group {
   display: inline-grid;
@@ -216,46 +219,27 @@ button, input[type=button], input[type=submit], .sc-btn {
       border-radius: 1rem 0px 0px 1rem; }
     .sc-btn__group--pill button:last-child, .sc-btn__group--pill input:last-child[type=button], .sc-btn__group--pill input:last-child[type=submit], .sc-btn__group--pill .sc-btn:last-child {
       border-radius: 0px 1rem 1rem 0px; }
-  .sc-btn__group .active .sc-btn--primary {
+  .sc-btn__group .active.sc-btn--primary {
     background-color: #06068e; }
-  .sc-btn__group .active .sc-btn--secondary {
+  .sc-btn__group .active.sc-btn--secondary {
     background-color: #7f7f7f; }
-  .sc-btn__group .active .sc-btn--info {
+  .sc-btn__group .active.sc-btn--info {
     background-color: #1a83e6; }
-  .sc-btn__group .active .sc-btn--success {
+  .sc-btn__group .active.sc-btn--success {
     background-color: #03854b; }
-  .sc-btn__group .active .sc-btn--warn {
+  .sc-btn__group .active.sc-btn--warn {
     background-color: #ae9018; }
-  .sc-btn__group .active .sc-btn--error {
+  .sc-btn__group .active.sc-btn--error {
     background-color: #ac0000; }
-  .sc-btn__group .active .sc-btn--light {
+  .sc-btn__group .active.sc-btn--light {
     background-color: #d6d6d6; }
-  .sc-btn__group .active .sc-btn--dark {
+  .sc-btn__group .active.sc-btn--dark {
     background-color: #020202; }
-  .sc-btn__group button, .sc-btn__group input[type=button], .sc-btn__group input[type=submit], .sc-btn__group .sc-btn {
+  .sc-btn__group button, .sc-btn__group input[type=button], .sc-btn__group input[type=submit], .sc-btn__group .sc-btn, .sc-btn__group a.btn {
     border-radius: 0; }
-    .sc-btn__group button:first-child, .sc-btn__group input:first-child[type=button], .sc-btn__group input:first-child[type=submit], .sc-btn__group .sc-btn:first-child {
+    .sc-btn__group button:first-child, .sc-btn__group input:first-child[type=button], .sc-btn__group input:first-child[type=submit], .sc-btn__group .sc-btn:first-child, .sc-btn__group a.btn:first-child {
       border-radius: 4px 0px 0px 4px; }
-    .sc-btn__group button:last-child, .sc-btn__group input:last-child[type=button], .sc-btn__group input:last-child[type=submit], .sc-btn__group .sc-btn:last-child {
-      border-radius: 0px 4px 4px 0px; }
-  .sc-btn__group input[type=button] {
-    border-radius: 0; }
-    .sc-btn__group input[type=button]:first-child {
-      border-radius: 4px 0px 0px 4px; }
-    .sc-btn__group input[type=button]:last-child {
-      border-radius: 0px 4px 4px 0px; }
-  .sc-btn__group input[type=submit] {
-    border-radius: 0; }
-    .sc-btn__group input[type=submit]:first-child {
-      border-radius: 4px 0px 0px 4px; }
-    .sc-btn__group input[type=submit]:last-child {
-      border-radius: 0px 4px 4px 0px; }
-  .sc-btn__group a.btn {
-    border-radius: 0;
-    text-decoration: none; }
-    .sc-btn__group a.btn:first-child {
-      border-radius: 4px 0px 0px 4px; }
-    .sc-btn__group a.btn:last-child {
+    .sc-btn__group button:last-child, .sc-btn__group input:last-child[type=button], .sc-btn__group input:last-child[type=submit], .sc-btn__group .sc-btn:last-child, .sc-btn__group a.btn:last-child {
       border-radius: 0px 4px 4px 0px; }
   .sc-btn__group--primary .active {
     background-color: #06068e; }
@@ -274,7 +258,7 @@ button, input[type=button], input[type=submit], .sc-btn {
   .sc-btn__group--dark .active {
     background-color: #020202; }
 
-button, input[type=button], input[type=submit], .sc-btn {
+button.sc-btn, input.sc-btn[type=button], input.sc-btn[type=submit], .sc-btn, .sc-btn__group button, .sc-btn__group input[type=button], .sc-btn__group input[type=submit], .sc-btn__group .sc-btn, .sc-btn__group a.btn {
   background-color: #e1e1e1;
   color: #212121;
   font-family: 'Montserrat-Regular', Calibri, 'Trebuchet MS', sans-serif;
@@ -285,9 +269,10 @@ button, input[type=button], input[type=submit], .sc-btn {
   border-radius: 4px;
   font-size: 1rem;
   padding: 0.4rem 0.7rem;
+  display: inline-block;
   cursor: pointer;
   transition: background-color .2s; }
-  button:hover, input:hover[type=button], input:hover[type=submit], .sc-btn:hover {
+  button.sc-btn:hover, .sc-btn:hover, .sc-btn__group button:hover, .sc-btn__group input:hover[type=button], .sc-btn__group input:hover[type=submit], .sc-btn__group a.btn:hover {
     background-color: #c2c2c2; }
   button.sc-btn--square, input.sc-btn--square[type=button], input.sc-btn--square[type=submit], .sc-btn--square.sc-btn {
     border-radius: 0px; }
@@ -343,6 +328,8 @@ button, input[type=button], input[type=submit], .sc-btn {
 .sc-btn {
   padding: 0.5rem 0.8rem;
   text-decoration: none; }
+  .sc-btn:hover {
+    text-decoration: none; }
 
 .sc-btn__group {
   display: inline-grid;
@@ -359,46 +346,27 @@ button, input[type=button], input[type=submit], .sc-btn {
       border-radius: 1rem 0px 0px 1rem; }
     .sc-btn__group--pill button:last-child, .sc-btn__group--pill input:last-child[type=button], .sc-btn__group--pill input:last-child[type=submit], .sc-btn__group--pill .sc-btn:last-child {
       border-radius: 0px 1rem 1rem 0px; }
-  .sc-btn__group .active .sc-btn--primary {
+  .sc-btn__group .active.sc-btn--primary {
     background-color: #06068e; }
-  .sc-btn__group .active .sc-btn--secondary {
+  .sc-btn__group .active.sc-btn--secondary {
     background-color: #7f7f7f; }
-  .sc-btn__group .active .sc-btn--info {
+  .sc-btn__group .active.sc-btn--info {
     background-color: #1a83e6; }
-  .sc-btn__group .active .sc-btn--success {
+  .sc-btn__group .active.sc-btn--success {
     background-color: #03854b; }
-  .sc-btn__group .active .sc-btn--warn {
+  .sc-btn__group .active.sc-btn--warn {
     background-color: #ae9018; }
-  .sc-btn__group .active .sc-btn--error {
+  .sc-btn__group .active.sc-btn--error {
     background-color: #ac0000; }
-  .sc-btn__group .active .sc-btn--light {
+  .sc-btn__group .active.sc-btn--light {
     background-color: #d6d6d6; }
-  .sc-btn__group .active .sc-btn--dark {
+  .sc-btn__group .active.sc-btn--dark {
     background-color: #020202; }
-  .sc-btn__group button, .sc-btn__group input[type=button], .sc-btn__group input[type=submit], .sc-btn__group .sc-btn {
+  .sc-btn__group button, .sc-btn__group input[type=button], .sc-btn__group input[type=submit], .sc-btn__group .sc-btn, .sc-btn__group a.btn {
     border-radius: 0; }
-    .sc-btn__group button:first-child, .sc-btn__group input:first-child[type=button], .sc-btn__group input:first-child[type=submit], .sc-btn__group .sc-btn:first-child {
+    .sc-btn__group button:first-child, .sc-btn__group input:first-child[type=button], .sc-btn__group input:first-child[type=submit], .sc-btn__group .sc-btn:first-child, .sc-btn__group a.btn:first-child {
       border-radius: 4px 0px 0px 4px; }
-    .sc-btn__group button:last-child, .sc-btn__group input:last-child[type=button], .sc-btn__group input:last-child[type=submit], .sc-btn__group .sc-btn:last-child {
-      border-radius: 0px 4px 4px 0px; }
-  .sc-btn__group input[type=button] {
-    border-radius: 0; }
-    .sc-btn__group input[type=button]:first-child {
-      border-radius: 4px 0px 0px 4px; }
-    .sc-btn__group input[type=button]:last-child {
-      border-radius: 0px 4px 4px 0px; }
-  .sc-btn__group input[type=submit] {
-    border-radius: 0; }
-    .sc-btn__group input[type=submit]:first-child {
-      border-radius: 4px 0px 0px 4px; }
-    .sc-btn__group input[type=submit]:last-child {
-      border-radius: 0px 4px 4px 0px; }
-  .sc-btn__group a.btn {
-    border-radius: 0;
-    text-decoration: none; }
-    .sc-btn__group a.btn:first-child {
-      border-radius: 4px 0px 0px 4px; }
-    .sc-btn__group a.btn:last-child {
+    .sc-btn__group button:last-child, .sc-btn__group input:last-child[type=button], .sc-btn__group input:last-child[type=submit], .sc-btn__group .sc-btn:last-child, .sc-btn__group a.btn:last-child {
       border-radius: 0px 4px 4px 0px; }
   .sc-btn__group--primary .active {
     background-color: #06068e; }
