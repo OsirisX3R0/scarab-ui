@@ -1,0 +1,196 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+    &:not(.dark) {
+        table {
+            thead {
+                tr {
+                    border-bottom: 1px solid darken($bg-light, 12%);
+                }
+            }
+            tbody {
+                tr {
+                    border-bottom: 1px solid darken($bg-light, 12%);
+                }
+            }
+            &.sc-table{
+                &--bg {
+                    tbody {
+                        td {
+                            background-color: darken($bg-light, 5%);
+                        }
+                    }
+                }
+                &--striped {
+                    tbody {
+                        tr {
+                            &:nth-child(odd) {
+                                background-color: darken($bg-light, 5%);
+                                color: set-color($bg-light);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.dark {
+        table {
+            thead {
+                tr {
+                    border-bottom: 1px solid lighten($bg-dark, 12%);
+                }
+            }
+            tbody {
+                tr {
+                    border-bottom: 1px solid lighten($bg-dark, 12%);
+                }
+            }
+            
+            &.sc-table{
+                &--bg {
+                    tbody {
+                        td {
+                            background-color: lighten($bg-dark, 5%);
+                        }
+                    }
+                }
+                &--striped {
+                    tbody {
+                        tr {
+                            &:nth-child(odd) {
+                                background-color: lighten($bg-dark, 5%);
+                                color: set-color($bg-dark);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    thead {
+        tr {
+            border-bottom: 1px solid $bg-dark;
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid $table-border;
+        }
+        tr:last-child {
+            border-bottom-width: 0;
+        }
+    }
+    td {
+        text-align: left;
+        padding: 0.75rem;
+    }
+    th {
+        @extend td;
+        font-weight: bold;
+    }
+
+    body {
+        &:not(.dark) {
+            table {
+
+            }
+        }
+    }
+
+    body {
+        &.dark {
+            table {
+
+            }
+        }
+    }
+
+    &.sc-table {
+
+        &--slim {
+            td {
+                padding: 0.25rem;
+            }
+        }
+
+        &--primary {
+            thead {
+                th {
+                    background-color: $primary;
+                    color: set-color($primary);
+                }
+            }
+        }
+
+        &--secondary {
+            thead {
+                th {
+                    background-color: $secondary;
+                    color: set-color($secondary);
+                }
+            }
+        }
+
+        &--info {
+            thead {
+                th {
+                    background-color: $info;
+                    color: set-color($info);
+                }
+            }
+        }
+
+        &--success {
+            thead {
+                th {
+                    background-color: $success;
+                    color: set-color($success);
+                }
+            }
+        }
+
+        &--warn {
+            thead {
+                th {
+                    background-color: $warn;
+                    color: set-color($warn);
+                }
+            }
+        }
+
+        &--error {
+            thead {
+                th {
+                    background-color: $error;
+                    color: set-color($error);
+                }
+            }
+        }
+
+        &--light {
+            thead {
+                th {
+                    background-color: $bg-light;
+                    color: set-color($bg-light);
+                }
+            }
+        }
+
+        &--dark {
+            thead {
+                th {
+                    background-color: $bg-dark;
+                    color: set-color($bg-dark);
+                }
+            }
+        }
+    }
+}
