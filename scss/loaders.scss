@@ -15,46 +15,44 @@ progress {
     }
     &.sc {
         &-progress {
-            &.sc-progress {
-                &--primary {
-                    &::-webkit-progress-value {
-                        background-color: $primary;
-                    }
+            &--primary {
+                &::-webkit-progress-value {
+                    background-color: $primary;
                 }
-                &--secondary {
-                    &::-webkit-progress-value {
-                        background-color: $secondary;
-                    }
+            }
+            &--secondary {
+                &::-webkit-progress-value {
+                    background-color: $secondary;
                 }
-                &--info {
-                    &::-webkit-progress-value {
-                        background-color: $info;
-                    }
+            }
+            &--info {
+                &::-webkit-progress-value {
+                    background-color: $info;
                 }
-                &--success {
-                    &::-webkit-progress-value {
-                        background-color: $success;
-                    }
+            }
+            &--success {
+                &::-webkit-progress-value {
+                    background-color: $success;
                 }
-                &--warn {
-                    &::-webkit-progress-value {
-                        background-color: $warn;
-                    }
+            }
+            &--warn {
+                &::-webkit-progress-value {
+                    background-color: $warn;
                 }
-                &--error {
-                    &::-webkit-progress-value {
-                        background-color: $error;
-                    }
+            }
+            &--error {
+                &::-webkit-progress-value {
+                    background-color: $error;
                 }
-                &--light {
-                    &::-webkit-progress-value {
-                        background-color: $bg-light;
-                    }
+            }
+            &--light {
+                &::-webkit-progress-value {
+                    background-color: $bg-light;
                 }
-                &--dark {
-                    &::-webkit-progress-value {
-                        background-color: $bg-dark;
-                    }
+            }
+            &--dark {
+                &::-webkit-progress-value {
+                    background-color: $bg-dark;
                 }
             }
         }
