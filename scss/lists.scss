@@ -14,7 +14,7 @@ ol {
 
 ul {
     @extend ol;
-    .sc {
+    &.sc {
         &-list {
             list-style-type: none;
             li {
