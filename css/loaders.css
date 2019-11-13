@@ -31,6 +31,79 @@ progress.sc-progress--light::-webkit-progress-value {
 progress.sc-progress--dark::-webkit-progress-value {
   background-color: #212121; }
 
+.sc-loader {
+  width: 2rem;
+  height: 2rem;
+  display: inline-block; }
+  .sc-loader--pulse::after {
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 50%;
+    animation: 1s linear infinite pulse; }
+  .sc-loader--spin::after {
+    content: "C";
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #ccc;
+    display: inline-block;
+    animation: 1s linear infinite spin;
+    place-self: center; }
+  .sc-loader--sm {
+    width: 1.5rem;
+    height: 1.5rem; }
+    .sc-loader--sm.sc-loader--pulse::after {
+      content: '';
+      width: 1.5rem;
+      height: 1.5rem;
+      animation: 1s linear infinite pulse; }
+    .sc-loader--sm.sc-loader--spin::after {
+      font-size: 1.5rem; }
+  .sc-loader--lg {
+    width: 2.75rem;
+    height: 2.75rem; }
+    .sc-loader--lg.sc-loader--pulse::after {
+      content: '';
+      width: 2.75rem;
+      height: 2.75rem;
+      animation: 1s linear infinite pulse; }
+    .sc-loader--lg.sc-loader--spin::after {
+      font-size: 2.75rem; }
+  .sc-loader--primary.sc-loader--pulse::after {
+    background-color: #0808c9; }
+  .sc-loader--primary.sc-loader--spin::after {
+    color: #0808c9; }
+  .sc-loader--secondary.sc-loader--pulse::after {
+    background-color: #9e9e9e; }
+  .sc-loader--secondary.sc-loader--spin::after {
+    color: #9e9e9e; }
+  .sc-loader--info.sc-loader--pulse::after {
+    background-color: #51a1ec; }
+  .sc-loader--info.sc-loader--spin::after {
+    color: #51a1ec; }
+  .sc-loader--success.sc-loader--pulse::after {
+    background-color: #05C16C; }
+  .sc-loader--success.sc-loader--spin::after {
+    color: #05C16C; }
+  .sc-loader--warn.sc-loader--pulse::after {
+    background-color: #E1BB22; }
+  .sc-loader--warn.sc-loader--spin::after {
+    color: #E1BB22; }
+  .sc-loader--error.sc-loader--pulse::after {
+    background-color: #E90000; }
+  .sc-loader--error.sc-loader--spin::after {
+    color: #E90000; }
+  .sc-loader--light.sc-loader--pulse::after {
+    background-color: gainsboro; }
+  .sc-loader--light.sc-loader--spin::after {
+    color: gainsboro; }
+  .sc-loader--dark.sc-loader--pulse::after {
+    background-color: #080808; }
+  .sc-loader--dark.sc-loader--spin::after {
+    color: #080808; }
+
 .loader.pulse {
   width: 2rem;
   height: 2rem;

@@ -59,6 +59,175 @@ progress {
     }
 }
 
+.sc-loader {
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    &--pulse {
+        &::after {
+            content: '';
+            width: 2rem;
+            height: 2rem;
+            background-color: #ccc;
+            display: inline-block;
+            border-radius: 50%;
+            animation: 1s linear infinite pulse;            
+        }
+    }
+    
+    &--spin {       
+        &::after {
+            content: "C";
+            font-size: 2rem;
+            font-weight: bolder;
+            color: #ccc;
+            display: inline-block;
+            animation: 1s linear infinite spin;
+            place-self: center;
+        }
+    }
+
+    &--sm {
+        width: 1.5rem;
+        height: 1.5rem;
+        &.sc-loader--pulse {
+            &::after {
+                content: '';
+                width: 1.5rem;
+                height: 1.5rem;
+                animation: 1s linear infinite pulse;
+            }
+        }
+        &.sc-loader--spin {
+            &::after {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &--lg {
+        width: 2.75rem;
+        height: 2.75rem;
+        &.sc-loader--pulse {
+            &::after {
+                content: '';
+                width: 2.75rem;
+                height: 2.75rem;
+                animation: 1s linear infinite pulse;
+            }
+        }
+        &.sc-loader--spin {
+            &::after {
+                font-size: 2.75rem;
+            }
+        }
+    }
+
+    &--primary {
+        &.sc-loader--pulse {
+            &::after {
+                background-color: $primary;
+            }
+        }
+        &.sc-loader--spin {
+            &::after {
+                color: $primary;
+            }
+        }
+    }
+    
+    &--secondary {
+        &.sc-loader--pulse {
+            &::after {
+                background-color: $secondary;
+            }
+        }
+        &.sc-loader--spin {
+            &::after {
+                color: $secondary;
+            }
+        }
+    }
+
+    &--info {
+        &.sc-loader--pulse {
+            &::after {
+                background-color: $info;
+            }
+        }
+        &.sc-loader--spin {
+            &::after {
+                color: $info;
+            }
+        }
+    }
+
+    &--success {
+        &.sc-loader--pulse {
+            &::after {
+                background-color: $success;
+            }
+        }
+        &.sc-loader--spin {
+            &::after {
+                color: $success;
+            }
+        }
+    }
+
+    &--warn {
+        &.sc-loader--pulse {
+            &::after {
+                background-color: $warn;
+            }
+        }
+        &.sc-loader--spin {
+            &::after {
+                color: $warn;
+            }
+        }
+    }
+
+    &--error {
+        &.sc-loader--pulse {
+            &::after {
+                background-color: $error;
+            }
+        }
+        &.sc-loader--spin {
+            &::after {
+                color: $error;
+            }
+        }
+    }
+
+    &--light {
+        &.sc-loader--pulse {
+            &::after {
+                background-color: darken($bg-light, 10%);
+            }
+        }
+        &.sc-loader--spin {
+            &::after {
+                color: darken($bg-light, 10%);
+            }
+        }
+    }
+
+    &--dark {
+        &.sc-loader--pulse {
+            &::after {
+                background-color: darken($bg-dark, 10%);
+            }
+        }
+        &.sc-loader--spin {
+            &::after {
+                color: darken($bg-dark, 10%);
+            }
+        }
+    }
+}
+
 .loader {
     &.pulse {
         width: 2rem;
