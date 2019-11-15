@@ -97,21 +97,21 @@ table {
         font-weight: bold;
     }
 
-    body {
-        &:not(.dark) {
-            table {
+    // body {
+    //     &:not(.dark) {
+    //         table {
 
-            }
-        }
-    }
+    //         }
+    //     }
+    // }
 
-    body {
-        &.dark {
-            table {
+    // body {
+    //     &.dark {
+    //         table {
 
-            }
-        }
-    }
+    //         }
+    //     }
+    // }
 
     &.sc-table {
 
