@@ -801,8 +801,12 @@ input[type=range] {
   margin: 8.65px 0; }
   input[type=range]:focus {
     outline: none; }
+    input[type=range]:focus::-webkit-slider-runnable-track {
+      background: white; }
     input[type=range]:focus::-ms-fill-lower {
       background: #c7c7c7; }
+    input[type=range]:focus::-ms-fill-upper {
+      background: white; }
   input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     height: 1.7px;
@@ -992,11 +996,11 @@ input[type=range] {
   input[type=range].sc-range--dark::-ms-thumb {
     background: #212121; }
 
-label.sc-check input, label.sc-radio input {
+label.sc-check input, label.sc-radio input, label.sc-switch input {
   display: none;
   visibility: hidden;
   opacity: 0; }
-  label.sc-check input:checked ~ span::after, label.sc-radio input:checked ~ span::after {
+  label.sc-check input:checked ~ span::after, label.sc-radio input:checked ~ span::after, label.sc-switch input:checked ~ span::after {
     content: '';
     width: 4px;
     height: 8px;
@@ -1008,10 +1012,10 @@ label.sc-check input, label.sc-radio input {
     border-style: solid;
     border-width: 0 2px 2px 0;
     transform: rotate(43deg); }
-  label.sc-check input:active ~ span, label.sc-radio input:active ~ span {
+  label.sc-check input:active ~ span, label.sc-radio input:active ~ span, label.sc-switch input:active ~ span {
     border-color: #0808c9; }
 
-label.sc-check span, label.sc-radio span {
+label.sc-check span, label.sc-radio span, label.sc-switch span {
   width: 17px;
   height: 17px;
   background-color: transparent;
@@ -1022,7 +1026,7 @@ label.sc-check span, label.sc-radio span {
   top: 3px;
   cursor: pointer;
   transition: background-color .1s; }
-  label.sc-check span:hover, label.sc-radio span:hover {
+  label.sc-check span:hover, label.sc-radio span:hover, label.sc-switch span:hover {
     background-color: #f0f0f0; }
 
 label.sc-check--secondary input:checked ~ span::after {
@@ -1123,15 +1127,82 @@ label.sc-radio--dark input:checked ~ span::after {
 label.sc-radio--dark input:active ~ span {
   border-color: #212121; }
 
+label.sc-switch input:checked ~ span {
+  background-color: #0808c9;
+  padding-left: 19px; }
+  label.sc-switch input:checked ~ span::after {
+    width: 12px;
+    height: 12px;
+    border-width: 0;
+    position: static;
+    background-color: #f5f5f5; }
+
+label.sc-switch span {
+  width: 35px;
+  height: 18px;
+  border-radius: 10px;
+  padding: 2px;
+  transition: all .3s; }
+  label.sc-switch span::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #0808c9;
+    border-radius: 50%;
+    display: block;
+    transition: all .3s; }
+
+label.sc-switch--secondary input:checked ~ span {
+  background-color: #9e9e9e; }
+
+label.sc-switch--secondary span::after {
+  background-color: #9e9e9e; }
+
+label.sc-switch--info input:checked ~ span {
+  background-color: #51a1ec; }
+
+label.sc-switch--info span::after {
+  background-color: #51a1ec; }
+
+label.sc-switch--success input:checked ~ span {
+  background-color: #05C16C; }
+
+label.sc-switch--success span::after {
+  background-color: #05C16C; }
+
+label.sc-switch--warn input:checked ~ span {
+  background-color: #E1BB22; }
+
+label.sc-switch--warn span::after {
+  background-color: #E1BB22; }
+
+label.sc-switch--error input:checked ~ span {
+  background-color: #E90000; }
+
+label.sc-switch--error span::after {
+  background-color: #E90000; }
+
+label.sc-switch--light input:checked ~ span {
+  background-color: #f5f5f5; }
+
+label.sc-switch--light span::after {
+  background-color: #f5f5f5; }
+
+label.sc-switch--dark input:checked ~ span {
+  background-color: #212121; }
+
+label.sc-switch--dark span::after {
+  background-color: #212121; }
+
 .sc-form__group {
   margin: 0 0.25rem 0.5rem 0.25rem; }
   .sc-form__group label {
     display: block; }
 
-.sc-check__group label, .sc-radio__group label {
+.sc-check__group label, .sc-radio__group label, .sc-switch__group label {
   display: inline; }
 
-.sc-check__group.sc-check--block label, .sc-check--block.sc-radio__group label {
+.sc-check__group.sc-check--block label, .sc-check--block.sc-radio__group label, .sc-check--block.sc-switch__group label {
   display: block; }
 
 .sc-form__col {

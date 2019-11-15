@@ -192,13 +192,13 @@ input {
         &:focus {
             outline: none;
             &::-webkit-slider-runnable-track {
-                // background: lighten($table-border, 25%);
+                background: lighten($table-border, 25%);
             }
             &::-ms-fill-lower {
                 background: $table-border;
             }
             &::-ms-fill-upper {
-                // background: lighten($table-border, 25%);
+                background: lighten($table-border, 25%);
             }
         }
         &::-webkit-slider-runnable-track {
@@ -350,9 +350,6 @@ label {
             &:hover {
                 background-color: lighten($table-border, 16%);
             }
-            // &::after {
-
-            // }
         }
 
         &--secondary {
@@ -544,6 +541,140 @@ label {
             }
         }
     }
+
+    &.sc-switch {
+        @extend .sc-check;
+        input {
+            &:checked ~ span {
+                background-color: $primary;
+                padding-left: 19px;
+
+                &::after {
+                    width: 12px;
+                    height:12px;
+                    border-width: 0;
+                    position: static;
+                    background-color: $bg-light;
+                }
+            }
+        }
+
+        span {
+            width: 35px;
+            height: 18px;
+            border-radius: 10px;
+            padding: 2px;
+            transition: all .3s;
+
+            &::after {
+                content: '';
+                width: 12px;
+                height:12px;
+                background-color: $primary;
+                border-radius: 50%;
+                display: block;
+                transition: all .3s;
+            }
+        }
+        
+        &--secondary {
+            input {
+                &:checked ~ span {
+                    background-color: $secondary;
+                }
+            }
+
+            span {
+                &::after {
+                    background-color: $secondary;
+                }
+            }
+        }
+        
+        &--info {
+            input {
+                &:checked ~ span {
+                    background-color: $info;
+                }
+            }
+
+            span {
+                &::after {
+                    background-color: $info;
+                }
+            }
+        }
+        
+        &--success {
+            input {
+                &:checked ~ span {
+                    background-color: $success;
+                }
+            }
+
+            span {
+                &::after {
+                    background-color: $success;
+                }
+            }
+        }
+        
+        &--warn {
+            input {
+                &:checked ~ span {
+                    background-color: $warn;
+                }
+            }
+
+            span {
+                &::after {
+                    background-color: $warn;
+                }
+            }
+        }
+        
+        &--error {
+            input {
+                &:checked ~ span {
+                    background-color: $error;
+                }
+            }
+
+            span {
+                &::after {
+                    background-color: $error;
+                }
+            }
+        }
+        
+        &--light {
+            input {
+                &:checked ~ span {
+                    background-color: $bg-light;
+                }
+            }
+
+            span {
+                &::after {
+                    background-color: $bg-light;
+                }
+            }
+        }
+        
+        &--dark {
+            input {
+                &:checked ~ span {
+                    background-color: $bg-dark;
+                }
+            }
+
+            span {
+                &::after {
+                    background-color: $bg-dark;
+                }
+            }
+        }
+    }
 }
 
 .sc-form__group {
@@ -565,6 +696,10 @@ label {
 }
 
 .sc-radio__group {
+    @extend .sc-check__group;
+}
+
+.sc-switch__group {
     @extend .sc-check__group;
 }
 
