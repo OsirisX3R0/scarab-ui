@@ -293,84 +293,136 @@ input[type=range] {
   input[type=range].sc-range--dark::-ms-thumb {
     background: #212121; }
 
-.sc-mark::after {
+label.sc-check input, label.sc-radio input {
   display: none;
-  position: absolute;
-  content: ""; }
-
-label.sc-check, label.sc-radio {
-  position: relative; }
-  label.sc-check--block {
-    display: block; }
-  label.sc-check--secondary input:checked ~ .mark {
-    background-color: #9e9e9e; }
-    label.sc-check--secondary input:checked ~ .mark:active {
-      border-color: #9e9e9e; }
-  label.sc-check--info input:checked ~ .mark {
-    background-color: #51a1ec; }
-    label.sc-check--info input:checked ~ .mark:active {
-      border-color: #51a1ec; }
-  label.sc-check--success input:checked ~ .mark {
-    background-color: #05C16C; }
-    label.sc-check--success input:checked ~ .mark:active {
-      border-color: #05C16C; }
-  label.sc-check--warn input:checked ~ .mark {
-    background-color: #E1BB22; }
-    label.sc-check--warn input:checked ~ .mark:active {
-      border-color: #E1BB22; }
-  label.sc-check--error input:checked ~ .mark {
-    background-color: #E90000; }
-    label.sc-check--error input:checked ~ .mark:active {
-      border-color: #E90000; }
-  label.sc-check--light input:checked ~ .mark {
-    background-color: #f5f5f5; }
-    label.sc-check--light input:checked ~ .mark:active {
-      border-color: #f5f5f5; }
-  label.sc-check--dark input:checked ~ .mark {
-    background-color: #212121; }
-    label.sc-check--dark input:checked ~ .mark:active {
-      border-color: #212121; }
-  label.sc-check input, label.sc-radio input {
-    display: none;
-    visibility: hidden;
-    opacity: 0; }
-    label.sc-check input:checked ~ .sc-mark, label.sc-radio input:checked ~ .sc-mark {
-      background-color: #0808c9; }
-      label.sc-check input:checked ~ .sc-mark::after, label.sc-radio input:checked ~ .sc-mark::after {
-        display: block; }
-  label.sc-check .sc-mark, label.sc-radio .sc-mark {
-    width: 15px;
-    height: 15px;
-    background-color: transparent;
-    border: 1px solid #c7c7c7;
-    border-radius: 4px;
-    display: inline-block;
+  visibility: hidden;
+  opacity: 0; }
+  label.sc-check input:checked ~ span::after, label.sc-radio input:checked ~ span::after {
+    content: '';
+    width: 4px;
+    height: 8px;
+    display: block;
     position: relative;
+    left: 5px;
     top: 1px;
-    cursor: pointer;
-    transition: background-color .1s; }
-    label.sc-check .sc-mark:hover, label.sc-radio .sc-mark:hover {
-      background-color: #eee; }
-    label.sc-check .sc-mark:active, label.sc-radio .sc-mark:active {
-      border-color: #0808c9; }
-    label.sc-check .sc-mark::after, label.sc-radio .sc-mark::after {
-      border-radius: 1px;
-      left: 4px;
-      top: 2px;
-      width: 3px;
-      height: 6px;
-      border-width: 0 2px 2px 0;
-      transform: rotate(43deg); }
+    border-color: #0808c9;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    transform: rotate(43deg); }
+  label.sc-check input:active ~ span, label.sc-radio input:active ~ span {
+    border-color: #0808c9; }
 
-label.sc-radio .sc-mark {
-  border-radius: 1rem; }
-  label.sc-radio .sc-mark::after {
-    border-width: 0;
-    border-radius: 1rem;
-    left: 3px;
-    top: 3px;
-    width: 7px;
-    height: 7px; }
+label.sc-check span, label.sc-radio span {
+  width: 17px;
+  height: 17px;
+  background-color: transparent;
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+  transition: background-color .1s; }
+  label.sc-check span:hover, label.sc-radio span:hover {
+    background-color: #f0f0f0; }
+
+label.sc-check--secondary input:checked ~ span::after {
+  border-color: #9e9e9e; }
+
+label.sc-check--secondary input:active ~ span {
+  border-color: #9e9e9e; }
+
+label.sc-check--info input:checked ~ span::after {
+  border-color: #51a1ec; }
+
+label.sc-check--info input:active ~ span {
+  border-color: #51a1ec; }
+
+label.sc-check--success input:checked ~ span::after {
+  border-color: #05C16C; }
+
+label.sc-check--success input:active ~ span {
+  border-color: #05C16C; }
+
+label.sc-check--warn input:checked ~ span::after {
+  border-color: #E1BB22; }
+
+label.sc-check--warn input:active ~ span {
+  border-color: #E1BB22; }
+
+label.sc-check--error input:checked ~ span::after {
+  border-color: #E90000; }
+
+label.sc-check--error input:active ~ span {
+  border-color: #E90000; }
+
+label.sc-check--light input:checked ~ span::after {
+  border-color: #f5f5f5; }
+
+label.sc-check--light input:active ~ span {
+  border-color: #f5f5f5; }
+
+label.sc-check--dark input:checked ~ span::after {
+  border-color: #212121; }
+
+label.sc-check--dark input:active ~ span {
+  border-color: #212121; }
+
+label.sc-radio input:checked ~ span::after {
+  width: 7px;
+  height: 7px;
+  display: block;
+  position: relative;
+  top: 4px;
+  left: 4px;
+  border-width: 0;
+  border-radius: 50%;
+  background-color: #0808c9; }
+
+label.sc-radio span {
+  border-radius: 50%; }
+
+label.sc-radio--secondary input:checked ~ span::after {
+  background-color: #9e9e9e; }
+
+label.sc-radio--secondary input:active ~ span {
+  border-color: #9e9e9e; }
+
+label.sc-radio--info input:checked ~ span::after {
+  background-color: #51a1ec; }
+
+label.sc-radio--info input:active ~ span {
+  border-color: #51a1ec; }
+
+label.sc-radio--success input:checked ~ span::after {
+  background-color: #05C16C; }
+
+label.sc-radio--success input:active ~ span {
+  border-color: #05C16C; }
+
+label.sc-radio--warn input:checked ~ span::after {
+  background-color: #E1BB22; }
+
+label.sc-radio--warn input:active ~ span {
+  border-color: #E1BB22; }
+
+label.sc-radio--error input:checked ~ span::after {
+  background-color: #E90000; }
+
+label.sc-radio--error input:active ~ span {
+  border-color: #E90000; }
+
+label.sc-radio--light input:checked ~ span::after {
+  background-color: #f5f5f5; }
+
+label.sc-radio--light input:active ~ span {
+  border-color: #f5f5f5; }
+
+label.sc-radio--dark input:checked ~ span::after {
+  background-color: #212121; }
+
+label.sc-radio--dark input:active ~ span {
+  border-color: #212121; }
 
 .sc-form__group {
   margin: 0 0.25rem 0.5rem 0.25rem; }
