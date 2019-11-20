@@ -48,22 +48,22 @@ body .sc-message {
   body .sc-message--info {
     border-color: #51a1ec; }
     body .sc-message--info .sc-message--title {
-      border-bottom: 1px solid #51a1ec;
+      border-bottom: 1px solid #819fbc;
       padding-bottom: 10px; }
   body .sc-message--success {
     border-color: #05C16C; }
     body .sc-message--success .sc-message--title {
-      border-bottom: 1px solid #05C16C;
+      border-bottom: 1px solid #379067;
       padding-bottom: 10px; }
   body .sc-message--warn {
     border-color: #E1BB22; }
     body .sc-message--warn .sc-message--title {
-      border-bottom: 1px solid #E1BB22;
+      border-bottom: 1px solid #a29561;
       padding-bottom: 10px; }
   body .sc-message--error {
     border-color: #E90000; }
     body .sc-message--error .sc-message--title {
-      border-bottom: 1px solid #E90000;
+      border-bottom: 1px solid #af3a3a;
       padding-bottom: 10px; }
   body .sc-message--light {
     border-color: gainsboro; }
