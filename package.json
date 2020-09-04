@@ -22,6 +22,6 @@
   "homepage": "https://github.com/OsirisX3R0/scarab-ui#readme",
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   }
 }
